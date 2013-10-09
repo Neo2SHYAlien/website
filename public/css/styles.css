@@ -184,6 +184,15 @@ header#header ul#navi li.active a {
 	behavior: url(PIE.htc);
 }
 
+/* */
+
+header#header ul#navi2 li {
+	float:left;
+	height:100px;
+	margin:200px 0 0 20px;
+	border-top:5px solid #f9f9f9;
+}
+
 /*--------------------------------------------------------------*/
 /*----------------[ =contentContainer ]-------------------------*/
 /*--------------------------------------------------------------*/
@@ -535,4 +544,34 @@ footer ul li {
 footer ul li a img {
 	width:auto;
 	height:39px;
+}
+
+#statusBar {
+	background:#f9f9f9; 
+	height:30px; 
+	width:100%; 
+	margin:99px 0 0 0; 
+	padding-left: 50px; 
+	border-bottom:1px solid #aaaaaa;
+}
+
+#statusBar ul#statusBarItems {
+	list-style-type:none;
+}
+
+#statusBar ul#statusBarItems li {
+	display:block;
+}
+
+.info {
+	text-decoration:none;
+	color:#000000;
+}
+
+.info A:link {
+	text-decoration:none;
+}
+
+.info A:hover {
+	text-decoration:underline;
 }
