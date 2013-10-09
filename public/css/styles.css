@@ -51,7 +51,7 @@ p {
 
 a {
 	text-decoration:none;
-	color:#ff8800;
+	color:#FCDB04;
 }
 
 a:hover {
@@ -116,8 +116,6 @@ header#header {
 header#header h1.logo a {
 	position:absolute;
 	display:block;
-	width:210px;
-	height:98px;
 	top:0;
 	left:50px;
 	overflow:hidden;
@@ -226,7 +224,7 @@ section#hackerSpace h2 {
 }
 
 section#hackerSpace h2 span {
-	color:#ff8800;
+	color:#FCDB04;
 }
 
 section#hackerSpace blockquote {
@@ -282,7 +280,7 @@ section#location ul.nav li a {
 
 section#location ul.nav li a:hover, 
 section#location ul.nav li a.current {
-	color:#ff8800;
+	color:#FCDB04;
 	background:#ffffff;
 	text-decoration:none;
 }
