@@ -573,3 +573,17 @@ footer ul li a img {
 .info A:hover {
 	text-decoration:underline;
 }
+
+.whoTitle {
+	font-size: normal; 
+	line-height: normal;
+}
+
+.whoDetails {
+	font-size: x-small; 
+	line-height: normal;
+}
+
+.whoGuests {
+	font-size: normal;
+}
