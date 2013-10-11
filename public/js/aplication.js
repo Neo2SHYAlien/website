@@ -65,7 +65,7 @@ function whoIsInTheLab()
 					sUsers += sPrefix+users[nUser].name1;
 					
 					var sUserImage = '';
-					var sFacebookInfog = '';
+					var sFacebookInfo = '';
 					if ( ("undefined" != users[nUser].facebook) && (0 < users[nUser].facebook.length) )
 					{
 						sFacebookInfo = '<a href="'+users[nUser].facebook+'" target="_blank">Facebook</a> ';
