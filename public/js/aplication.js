@@ -5,6 +5,10 @@ $(function() {
 	});
 });
 
+var sUrlFacebook = "https://www.facebook.com/";
+var sUrlTwitter = "https://twitter.com/";
+var sUrlGooglePlus = "https://plus.google.com/";
+
 $(document).ready(function(){
 	//Start scroll
 	$('a[href^="#"]').on('click',function (e) {
@@ -38,7 +42,7 @@ $(document).ready(function(){
 function whoIsInTheLab()
 {
 	$.ajax({
-		url: 'http://raspberry.hackafe.org/?format=json',
+		url: 'http://raspberry.hackafe.org/who-dev/?format=json',
 		dataType: 'jsonp',
 		success: function(data){
 			if ('undefined' === typeof data.data)
@@ -68,7 +72,8 @@ function whoIsInTheLab()
 					var sFacebookInfo = '';
 					if ( ("undefined" != users[nUser].facebook) && (0 < users[nUser].facebook.length) )
 					{
-						sFacebookInfo = '<a href="'+users[nUser].facebook+'" target="_blank">Facebook</a> ';
+						var sFacebookUrlLink = sUrlFacebook + users[nUser].facebook;
+						sFacebookInfo = '<a href="'+sFacebookUrlLink+'" target="_blank">Facebook</a> ';
 						sUserImage = 'http://graph.facebook.com/'+users[nUser].facebook+'/picture?type=normal';
 					}
 					
@@ -80,11 +85,13 @@ function whoIsInTheLab()
 					sList += sFacebookInfo;
 					if ( ("undefined" != users[nUser].twitter) && (0 < users[nUser].twitter.length) )
 					{
-						sList += '<a href="'+users[nUser].twitter+'" target="_blank">Twitter</a> ';
+						var sTwitterUrlLink = sUrlTwitter + users[nUser].twitter;
+						sList += '<a href="'+sTwitterUrlLink+'" target="_blank">Twitter</a> ';
 					}
 					if ( ("undefined" != users[nUser].googlePlus) && (0 < users[nUser].googlePlus.length) )
 					{
-						sList += '<a href="'+users[nUser].googlePlus+'" target="_blank">Google+</a> ';
+						var sGooglePlusUrlLink = sUrlGooglePlus + users[nUser].googlePlus;
+						sList += '<a href="'+sGooglePlusUrlLink+'" target="_blank">Google+</a> ';
 					}
 					if ( ("undefined" != users[nUser].email) && (0 < users[nUser].email.length) )
 					{
