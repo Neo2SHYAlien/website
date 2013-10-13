@@ -8,6 +8,7 @@ $(function() {
 var sUrlFacebook = "https://www.facebook.com/";
 var sUrlTwitter = "https://twitter.com/";
 var sUrlGooglePlus = "https://plus.google.com/";
+var sUrlFacebookImage = "https://graph.facebook.com/%s/picture?type=square";
 
 $(document).ready(function(){
 	//Start scroll
@@ -68,18 +69,27 @@ function whoIsInTheLab()
 					var sPrefix = (0 == nUser) ? '' : ', ';
 					sUsers += sPrefix+users[nUser].name1;
 					
-					var sUserImage = '';
+					var sUserImage = 'images/noimage.gif';
 					var sFacebookInfo = '';
 					if ( ("undefined" != users[nUser].facebook) && (0 < users[nUser].facebook.length) )
 					{
 						var sFacebookUrlLink = sUrlFacebook + users[nUser].facebook;
 						sFacebookInfo = '<a href="'+sFacebookUrlLink+'" target="_blank">Facebook</a> ';
-						sUserImage = 'http://graph.facebook.com/'+users[nUser].facebook+'/picture?type=normal';
+						sUserImage = 'http://graph.facebook.com/'+users[nUser].facebook+'/picture?type=square';
 					}
 					
 					//load data about the users
 					sList += '<li>';
-					sList += '<p><div class="whoTitle"><a href="'+users[nUser].website+'" target="_blank">';
+					sList += '<table border="0">';
+					sList += '<tr>';
+					sList += '<td style="padding-right: 4px;">';
+					if (0 < sUserImage.length)
+					{
+						sList += '<img src="'+sUserImage+'" />';
+					}
+					sList += '</td>';
+					sList += '<td class="whoImageCell">';
+					sList += '<div class="whoTitle"><a href="'+users[nUser].website+'" target="_blank">';
 					sList += users[nUser].name1+' '+users[nUser].name2+'</a></div>';
 					sList += '<div class="whoDetails">';
 					sList += sFacebookInfo;
@@ -95,13 +105,15 @@ function whoIsInTheLab()
 					}
 					if ( ("undefined" != users[nUser].email) && (0 < users[nUser].email.length) )
 					{
-						sList += '</br>e-mail: <a href="mailto:'+users[nUser].email+'" target="_blank">'+users[nUser].email+'</a> ';
+						sList += '<br>e-mail: <a href="mailto:'+users[nUser].email+'">'+users[nUser].email+'</a> ';
 					}
 					if ( ("undefined" != users[nUser].tel) && (0 < users[nUser].tel.length) )
 					{
-						sList += '</br>tel: <a href="'+users[nUser].tel+'" target="_blank">'+users[nUser].tel+'</a> ';
+						sList += '<br>tel: <a href="callto:'+users[nUser].tel+'">'+users[nUser].tel+'</a> ';
 					}
-					sList += '</div></p></li>';
+					sList += '</div>';
+					sList += '</td>';
+					sList += '</tr></table></li>';
 				}
 								
 				sText += sUsers;

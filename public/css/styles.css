@@ -574,6 +574,10 @@ footer ul li a img {
 	text-decoration:underline;
 }
 
+.whoImageCell {
+	vertical-align:text-top;
+}
+
 .whoTitle {
 	font-size: normal; 
 	line-height: normal;
