@@ -325,8 +325,8 @@ section#aboutHackafe header h2 span.black {
 }
 
 section#aboutHackafe .contentAboutHackafe {
-	width:580px;
-	margin:0 0 0 420px;
+	width:600px;
+	margin:0 0 0 400px;
 }
 
 section#aboutHackafe ul.socialNavi {
@@ -344,6 +344,19 @@ section#aboutHackafe ul.socialNavi li {
 
 section#aboutHackafe ul.socialNavi li.text {
 	
+}
+
+section#aboutHackafe .contentAboutHackafe  ul {
+	margin:0 0 0 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	behavior: url(PIE.htc);
+}
+
+section#aboutHackafe .contentAboutHackafe  ul li {
+	padding:0 0 0 30px;
+	background:url(../images/bg-ul-li.png) left 15px no-repeat;
 }
 
 /*--------------------------------------------------------------
