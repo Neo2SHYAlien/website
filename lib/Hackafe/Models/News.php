@@ -1,8 +1,20 @@
 <?
 
+	/*
+	SELECT
+		`nd`.*#, GROUP_CONCAT(`nd`.`language_id`) AS `available_languages`
+	FROM `news` AS `n`
+	LEFT JOIN `news_data` AS `nd` ON `nd`.`news_id` = `n`.`id`
+	WHERE 1
+		AND `nd`.`is_deleted` = 0
+		#AND `nd`.`language_id` = 1
+	GROUP BY `n`.`id`
+	*/
+	namespace Hackafe\Models;
+
 	use Hackafe\DB\Mysqli;
 
-	class Hackafe_Models_News {
+	class News {
 
 		private $db;
 
@@ -71,26 +83,9 @@
 		}
 
 		public function view_article($id = 0) {
-			/*
-				show article
-
-				example errors:
-				0 - no errors
-				1 - not specified id
-				2 - not found
-
-				return (array)
-			*/
-
-			$article = array(
-				'loaded' => 0,
-				'error' => 1,
-				'data' => array(),
-			);
 			if (empty($id)) {
-				return $article;
+				throw new NewsException('Not Specified id', 1);
 			}
-			$article['error'] = 2;
 			$query = '
 				SELECT
 					* # example
@@ -100,15 +95,10 @@
 				LIMIT 1;
 			';
 			$query = $this->db->query($query);
-			if ($query) {
-				$result = $query->fetch_assoc();
-				if ($result) {
-					$article['error'] = 0;
-					$article['data'] = $result;
-				}
+			if ( (false == $query) || (null == ($result = $query->fetch_assoc()) ) ) {
+				throw new NewsException('News article not found', 2);
 			}
-
-			return $article;
+			return $result;
 
 		}
 

@@ -1,7 +1,8 @@
 <?php
 
 	use Hackafe\DB\Mysqli,
-		Hackafe\DB\Exception;
+		Hackafe\DB\Exception,
+		Hackafe\DB\News;
 
 	defined('DS') OR define('DS', DIRECTORY_SEPARATOR);
 
@@ -41,10 +42,5 @@
 	// използване на Mysqli singleton в контекст на обект от конкретно пространство:
 	$foo = new Hackafe\Models\Bar();
 	printf('<pre>%s</pre>', print_r($foo->getData(), true));
-
-	$news = new Hackafe_Models_News();
-	printf('<pre>Empty Article Id:<br />%s</pre>', print_r($news->view_article(), true));
-	printf('<pre>Existing Article Id:<br />%s</pre>', print_r($news->view_article(1), true));
-	printf('<pre>Not Existing Article Id:<br />%s</pre>', print_r($news->view_article(2), true));
 
 	$db->close();
