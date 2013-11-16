@@ -472,7 +472,7 @@ section#contacts header address {
 
 section#contacts ul.contactMembers li {
 	float:left;
-	width:310px;
+	width:465px;
 	padding:0 0 0 30px;
 	margin:0 0 0 10px;
 	border-right:1px solid #aaaaaa;
@@ -492,11 +492,17 @@ section#contacts ul.contactMembers li h3 {
 	line-height:30px;
 	color:#565656;
 	letter-spacing:-0.05em;
+	margin-bottom: 4px;
 }
 
 section#contacts ul.contactMembers li span.phone {
 	font-size:18px;
 	font-weight:900;
+}
+
+section#contacts ul.contactMembers li span.mail {
+	font-size:18px;
+	font-weight:normal;
 }
 
 section#contacts ul.contactMembers li a.angeloff {
