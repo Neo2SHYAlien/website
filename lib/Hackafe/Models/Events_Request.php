@@ -1,16 +1,23 @@
 <?
 
-	//use Hackafe\DB\Mysqli;
-
 	class Hackafe_Models_Events_Request {
 
-		private $db;
+		private $array_request	= array();
+		private $array_error	= array();
 
 		public function __construct() {
-			//$this->db = Mysqli::singleton();
-			//$this->_temp_create_table(); // COMMENT THIS LINE AFTER FIRST RUN :)
-		}
-
 		
-
+			$this->array_request	= $_REQUEST;
+		}
+		
+		public function sanitize_request()
+		{	
+			
+			
+				filter_input_array($this->array_request, FILTER_SANITIZE_STRING);
+			
+		}
+		
+	
 	}
+?>
