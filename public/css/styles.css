@@ -209,7 +209,7 @@ header#header ul#navi2 li {
 --------------------------------------------------------------*/
 section#hackerSpace {
 	width:100%;
-	min-height:605px;
+	min-height:505px;
 	padding:30px 0 0 0;
 	background:url(../images/bg-hacker-space.jpg) center 0 repeat-x;
 }
@@ -332,7 +332,7 @@ section#aboutHackafe .contentAboutHackafe {
 section#aboutHackafe ul.socialNavi {
 	float:left;
 	padding:20px 0 0 0;
-	margin:0 0 0 301px;
+	margin:-100px 0 0 0;
 }
 
 section#aboutHackafe ul.socialNavi li {
@@ -343,7 +343,8 @@ section#aboutHackafe ul.socialNavi li {
 }
 
 section#aboutHackafe ul.socialNavi li.text {
-	
+	float: left;
+	font-size: 18px;
 }
 
 section#aboutHackafe .contentAboutHackafe  ul {
