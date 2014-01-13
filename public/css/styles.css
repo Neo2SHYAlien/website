@@ -51,7 +51,7 @@ p {
 
 a {
 	text-decoration:none;
-	color:#FCDB04;
+	color:#1d6ac5;
 }
 
 a:hover {
@@ -209,7 +209,7 @@ header#header ul#navi2 li {
 --------------------------------------------------------------*/
 section#hackerSpace {
 	width:100%;
-	min-height:605px;
+	min-height:505px;
 	padding:30px 0 0 0;
 	background:url(../images/bg-hacker-space.jpg) center 0 repeat-x;
 }
@@ -295,7 +295,7 @@ section#location iframe {
 --------------------------------------------------------------*/
 section#aboutHackafe {
 	width:100%;
-	height:580px;
+	height:760px;
 	padding:60px 0 0 0;
 	background:url(../images/bg-about-hackafe.jpg) center 0 no-repeat;
 	border-bottom:1px solid #aaaaaa;
@@ -326,24 +326,22 @@ section#aboutHackafe header h2 span.black {
 
 section#aboutHackafe .contentAboutHackafe {
 	width:600px;
-	margin:0 0 0 400px;
+	margin:0 0 0 360px;
 }
 
-section#aboutHackafe ul.socialNavi {
+section#aboutHackafe .socialNavi {
 	float:left;
 	padding:20px 0 0 0;
-	margin:0 0 0 301px;
+	margin:-330px 0 0 0;
+	font-size: 28px;
 }
 
-section#aboutHackafe ul.socialNavi li {
-	float:left;
-	height:76px;
-	line-height:76px;
-	margin:0 34px 0 0;
+section#aboutHackafe .socialNavi p {
+	margin-top: 10px;
 }
 
-section#aboutHackafe ul.socialNavi li.text {
-	
+section#aboutHackafe .socialNavi a {
+	float:right;
 }
 
 section#aboutHackafe .contentAboutHackafe  ul {
@@ -505,7 +503,7 @@ section#contacts ul.contactMembers li h3 {
 	line-height:30px;
 	color:#565656;
 	letter-spacing:-0.05em;
-	margin-bottom: 4px;
+	margin-bottom: 15px;
 }
 
 section#contacts ul.contactMembers li span.phone {
