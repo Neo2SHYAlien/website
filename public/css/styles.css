@@ -51,7 +51,7 @@ p {
 
 a {
 	text-decoration:none;
-	color:#FCDB04;
+	color:#1d6ac5;
 }
 
 a:hover {
@@ -295,7 +295,7 @@ section#location iframe {
 --------------------------------------------------------------*/
 section#aboutHackafe {
 	width:100%;
-	height:580px;
+	height:760px;
 	padding:60px 0 0 0;
 	background:url(../images/bg-about-hackafe.jpg) center 0 no-repeat;
 	border-bottom:1px solid #aaaaaa;
@@ -326,7 +326,7 @@ section#aboutHackafe header h2 span.black {
 
 section#aboutHackafe .contentAboutHackafe {
 	width:600px;
-	margin:0 0 0 400px;
+	margin:0 0 0 360px;
 }
 
 section#aboutHackafe ul.socialNavi {
@@ -506,7 +506,7 @@ section#contacts ul.contactMembers li h3 {
 	line-height:30px;
 	color:#565656;
 	letter-spacing:-0.05em;
-	margin-bottom: 4px;
+	margin-bottom: 15px;
 }
 
 section#contacts ul.contactMembers li span.phone {
