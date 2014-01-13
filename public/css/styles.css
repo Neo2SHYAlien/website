@@ -329,22 +329,19 @@ section#aboutHackafe .contentAboutHackafe {
 	margin:0 0 0 360px;
 }
 
-section#aboutHackafe ul.socialNavi {
+section#aboutHackafe .socialNavi {
 	float:left;
 	padding:20px 0 0 0;
-	margin:-100px 0 0 0;
+	margin:-330px 0 0 0;
+	font-size: 28px;
 }
 
-section#aboutHackafe ul.socialNavi li {
-	float:left;
-	height:76px;
-	line-height:76px;
-	margin:0 34px 0 0;
+section#aboutHackafe .socialNavi p {
+	margin-top: 10px;
 }
 
-section#aboutHackafe ul.socialNavi li.text {
-	float: left;
-	font-size: 18px;
+section#aboutHackafe .socialNavi a {
+	float:right;
 }
 
 section#aboutHackafe .contentAboutHackafe  ul {
