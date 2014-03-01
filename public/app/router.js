@@ -10,14 +10,14 @@ define([
   'views/IndexView',
   'views/EventsView',
   'views/ProjectsView',
-  'views/AboutView',
+  'views/MembersView',
   'views/SponsorsView',
   'views/ContactsView',
   'models/EventsCollection',
   'models/ProjectsCollection',
   'models/SponsorsCollection',
   ],
-  function($, _, Backbone, I18n, translations, HeaderView, FooterView, IndexView, EventsView, ProjectView, AboutView, SponsorsView, ContactsView, EventsCollection, ProjectsCollection, SponsorsCollection) {
+  function($, _, Backbone, I18n, translations, HeaderView, FooterView, IndexView, EventsView, ProjectView,MembersView, SponsorsView, ContactsView, EventsCollection, ProjectsCollection, SponsorsCollection) {
     // "use strict";
 
     var AppRouter = Backbone.Router.extend({
@@ -30,7 +30,7 @@ define([
             '!/projects/:projectId': 'projects',
             '!/projects': 'projects',
             '!/sponsors': 'sponsors',
-            '!/about': 'about',
+            '!/members': 'members',
             '!/contacts': 'contacts'
         },
 
@@ -97,7 +97,7 @@ define([
             return this;
         },
 
-        about: function() {
+       members: function() {
             var router = this;
 
             //updateHeader
@@ -108,23 +108,23 @@ define([
             }
 
             //updatePage content
-            if(router.views.aboutView) {
-                router.views.aboutView.render();
+            if(router.views.membersView) {
+                router.views.membersView.render();
             }else {
 
-                router.views.aboutView = new AboutView();
+                router.views.membersView = new MembersView();
             }
 
             //bind language update
-            window.eventDispacher.on('language:update', router.views.aboutView.render, router.views.aboutView);
+            window.eventDispacher.on('language:update', router.views.membersView.render, router.views.membersView);
 
             //Turn off all about events
             router.on('all', function (eventName) {
 
-                if(eventName && eventName.indexOf('route:') === 0 && eventName !== 'route:about') {
+                if(eventName && eventName.indexOf('route:') === 0 && eventName !== 'route:members') {
                     this.off(null, arguments.callee);
 
-                    window.eventDispacher.off('language:update', router.views.aboutView.render);
+                    window.eventDispacher.off('language:update', router.views.membersView.render);
                 }
 
             });
