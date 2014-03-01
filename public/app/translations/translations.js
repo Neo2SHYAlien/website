@@ -13,9 +13,10 @@ define(['I18n'],
             },
             navigation: {
                 home: 'Начало',
-                about: 'За нас',
+                member: 'Стани член',
                 events: 'Събития',
-                contacts: 'Контакти'
+                contacts: 'Контакти',
+                logo: 'Hackafe Plovdiv'
             },
 
             homePage: {
@@ -32,9 +33,10 @@ define(['I18n'],
             },
             navigation: {
                 home: 'Home',
-                about: 'About',
+                member: 'Become Member',
                 events: 'Events',
-                contacts: 'Contacts'
+                contacts: 'Contacts',
+                logo: 'Hackafe Plovdiv'
             },
 
             homePage: {

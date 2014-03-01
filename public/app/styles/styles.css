@@ -15,17 +15,16 @@
 /*--------------------------------------------------------------*/
 
 html, body {
-	height:100%;
+	height: 100%;
 }
 
 body {
-	min-height:1060px;
-	background:#f9f9f9;
+	background: #f9f9f9;
 	font-family: 'Roboto', sans-serif;
-	font-size:16px;
-	font-weight:400;
-	line-height:30px;
-	color:#000000;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #000000;
 }
 
 article,
@@ -87,85 +86,78 @@ img {
 /*--------------------------------------------------------------*/
 
 #container {
-	min-height:100%;
-	height:auto !important;
-	height:100%;
-	width:100%;
-	margin: 0 0 -180px 0;
+	min-height: 100%;
+	height: auto;
+	height: 100%;
+	width: 100%;
+	/*margin: 0 0 -180px 0;*/
 }
 
 /*--------------------------------------------------------------*/
 /*---------------------------[ =header ]------------------------*/
 /*--------------------------------------------------------------*/
 
-header#header {
-	width:100%;
-	height:98px;
-	position:fixed;
-	z-index:100;
-	top:0;
-	left:0;
-	background:#f9f9f9;
-	border-bottom:1px solid #aaaaaa;
+#header {
+	width: 100%;
+	/*height:98px;*/
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background: #f9f9f9;
+	border-bottom: 1px solid #aaaaaa;
 }
 
 /*--------------------------------------------------------------
 	header => logo
 --------------------------------------------------------------*/
-header#header h1.logo a {
-	position:absolute;
-	display:block;
-	top:0;
-	left:50px;
-	overflow:hidden;
+#header .logo {
+	float: left;
+	margin-left:50px;
 }
 
-header#header h1.logo img {
+#header .logo img {
 	border:none;
 }
 
-header#header h1 span {
+#header h1 span {
 	display:block;
-	text-indent:-9999px;
+	height: 0;
+	overflow: hidden;
 }
 
-header#header h1.branding a:hover {
+#header h1.branding a:hover {
 	text-decoration:none;
 }
 
 /*--------------------------------------------------------------
-	header => navi
+	header => navigation
 --------------------------------------------------------------*/
 
-header#header ul#navi {
-	list-style-type:none;
-	width:750px;
-	height:60px;
-	position:absolute;
-	top:33px;
-	right:50px;
+#navigation {
+	float: right;
 }
 
-header#header ul#navi li {
-	float:left;
-	height:60px;
-	margin:0 0 0 20px;
-}
+#navigation a {
+	display: inline-block;
+	height: 60px;
+	padding: 0 5px;
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	margin: 20px 0 0 20px;
 
-header#header ul#navi li a {
-	display:block;
-	height:60px;
-	padding:0 5px;
-	font-size:18px;
-	font-weight:400;
-	color:#000000;
-	text-transform:uppercase;
-	border-bottom:5px solid #f9f9f9;
-	-webkit-transition:0.2s ease-in-out 0s;
-	-moz-transition:0.2s ease-in-out 0s;
-	-o-transition:0.2s ease-in-out 0s;
-	-ms-transition:0.2s ease-in-out 0s;
-	transition:0.2s ease-in-out 0s;
+	font-size: 18px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+	border-bottom: 5px solid #f9f9f9;
+
+	-webkit-transition: 0.2s ease-in-out 0s;
+	-moz-transition: 0.2s ease-in-out 0s;
+	-o-transition: 0.2s ease-in-out 0s;
+	-ms-transition: 0.2s ease-in-out 0s;
+	transition: 0.2s ease-in-out 0s;
 }
 
 header#header ul#navi li a:hover,
@@ -186,6 +178,29 @@ header#header ul#navi2 li {
 	height:100px;
 	margin:200px 0 0 20px;
 	border-top:5px solid #f9f9f9;
+}
+
+.language {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.language a {
+	display: inline-block;
+	width: 24px;
+	height: 0;
+	padding-top: 17px;
+	overflow: hidden;
+	background: url('../img/languages.png') 0 0 no-repeat;
+}
+
+.language [data-locale="EN"] {
+	background-position: 0 -17px;
+}
+
+.language [data-locale="BG"] {
+	background-position: 0 0;
 }
 
 /*--------------------------------------------------------------*/
@@ -570,6 +585,18 @@ footer ul li a img {
 	text-decoration:underline;
 }
 
+
+/* ==========================================================================
+   Responsive styles
+   ========================================================================== */
+@media only screen and (max-width: 978px) {
+	.logo {
+		width: 30%;
+	}
+	.logo img {
+		width: 100%;
+	}
+}
 
 /* ==========================================================================
    Print styles
