@@ -5,7 +5,7 @@
                 <div class="content clearfix">
                     <ul class="nav">
                         <li><a href="#tabOne" class="current" title="<%= I18n.t('contacts.map') %>"><%= I18n.t('contacts.map') %></a></li>
-                        <li><a href="#tabTwo" title="G Street View">G Street View</a></li>
+                        <li><a href="#tabTwo" title="<%= I18n.t('contacts.street') %>"><%= I18n.t('contacts.street') %></a></li>
                     </ul>
                 </div><!-- End of content -->
 
@@ -29,31 +29,31 @@
         <article>
             <div class="content">
                 <header class="clearfix">
-                    <h2>Contacts</h2>
+                    <h2><%= I18n.t('contacts.contacts') %></h2>
                     <address>
-                      Non-profit organization "Hakafe"<br>
-                      "Grozdov Pazar" №2, 4000 Plovdiv, Bulgaria
+                      <%= I18n.t('contacts.org') %><br>
+                      <%= I18n.t('contacts.loc') %>
                     </address>
                 </header>
                 <ul class="contactMembers">
                     <li>
                       <h3>Е-mail</h3>
-                      <span class="mail">Chief</span>
+                      <span class="mail"><%= I18n.t('contacts.chief') %></span>
                       <a href="mailto:info@hackafe.org" title="info@hackafe.org">info@hackafe.org</a><br>
-                      <span class="mail">Events</span>
+                      <span class="mail"><%= I18n.t('contacts.events') %></span>
                       <a href="mailto:events@hackafe.org" title="events@hackafe.org">events@hackafe.org</a><br>
-                      <span class="mail">Finance</span>
+                      <span class="mail"><%= I18n.t('contacts.finance') %></span>
                       <a href="mailto:finance@hackafe.org" title="finance@hackafe.org">finance@hackafe.org</a><br>
-                      <span class="mail">Office Manager</span>
+                      <span class="mail"><%= I18n.t('contacts.manager') %></span>
                       <a href="mailto:office@hackafe.org" title="office@hackafe.org">office@hackafe.org</a><br>
                     </li>
                     <li>
                       <h3>E-mails</h3>
-                      <span class="mail">Common</span>
+                      <span class="mail"><%= I18n.t('contacts.common') %></span>
                       <a href="http://luna.superhosting.bg/mailman/listinfo/general_hackafe.org" rel="external" title="general@hackafe.org">general@hackafe.org</a><br>
-                      <span class="mail">Announcement</span>
+                      <span class="mail"><%= I18n.t('contacts.announcement') %></span>
                       <a href="http://luna.superhosting.bg/mailman/listinfo/announce_hackafe.org" rel="external" title="announce@hackafe.org">announce@hackafe.org</a><br>
-                      <span class="mail">Online system</span>
+                      <span class="mail"><%= I18n.t('contacts.system') %></span>
                       <a href="http://luna.superhosting.bg/mailman/listinfo/dev_hackafe.org" rel="external" title="dev@hackafe.org">dev@hackafe.org</a><br>
                     </li>
                 </ul><!-- End of contactMembers -->

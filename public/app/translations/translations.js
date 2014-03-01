@@ -25,7 +25,19 @@ define(['I18n'],
 
             contacts: {
                 title: 'Контакти',
-                map: 'Карта'
+                map: 'Карта',
+                street: 'G Street View',
+                contacts: 'Контакти',
+                org: 'Сдружение с нестопанска цел "Хакафе"',
+                loc: 'пл. "Гроздов Пазар" №2, 4000 Пловдив, България',
+                chief: 'Вожд',
+                events: 'Събития',
+                finance: 'Финанси',
+                manager: 'Офис мениджър',
+                common: 'Общ',
+                announcement: 'Известия',
+                system: 'Онлайн система'
+
             }
         };
 
@@ -50,7 +62,18 @@ define(['I18n'],
 
             contacts: {
                 title: 'Contacts',
-                map: 'Map'
+                map: 'Map',
+                street: 'G Street View',
+                contacts: 'Contacts'
+                org: 'Non-profit organization "Hakafe"',
+                loc: '"Grozdov Pazar" №2, 4000 Plovdiv, Bulgaria',
+                chief: 'Chief',
+                events: 'Events',
+                finance: 'Finance',
+                manager: 'Office manager',
+                common: 'Common',
+                announcement: 'Announcement',
+                system: 'Online system'
             }
         };
 
