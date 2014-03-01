@@ -16,6 +16,10 @@ define(['I18n'],
                 about: 'За нас',
                 events: 'Събития',
                 contacts: 'Контакти'
+            },
+
+            homePage: {
+                title: '<span class="white">Какво е</span><span class="black">hackafe</span>'
             }
         };
 
@@ -31,6 +35,10 @@ define(['I18n'],
                 about: 'About',
                 events: 'Events',
                 contacts: 'Contacts'
+            },
+
+            homePage: {
+                title: '<span class="white">What is</span><span class="black">hackafe</span>'
             }
         };
 

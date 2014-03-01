@@ -150,7 +150,7 @@ define([
 
             }else {
 
-                router.views.eventView = new EventView({
+                router.views.eventView = new EventsView({
                     eventsCollection: null,
                     eventId: eventId || null
                 });
