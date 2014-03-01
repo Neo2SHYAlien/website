@@ -590,6 +590,14 @@ footer ul li a img {
    Responsive styles
    ========================================================================== */
 @media only screen and (max-width: 978px) {
+
+	#header {
+		position: relative;
+		top: auto;
+		left: auto;
+	}
+
+
 	.logo {
 		width: 30%;
 	}
@@ -598,6 +606,22 @@ footer ul li a img {
 	}
 }
 
+/* ==========================================================================
+   service styles
+   ========================================================================== */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
 /* ==========================================================================
    Print styles
    ========================================================================== */

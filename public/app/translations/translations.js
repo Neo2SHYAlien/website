@@ -21,6 +21,11 @@ define(['I18n'],
 
             homePage: {
                 title: '<span class="white">Какво е</span><span class="black">hackafe</span>'
+            },
+
+            contacts: {
+                title: 'Контакти',
+                map: 'Карта'
             }
             members:{
 
@@ -57,6 +62,11 @@ define(['I18n'],
 
             homePage: {
                 title: '<span class="white">What is</span><span class="black">hackafe</span>'
+            },
+
+            contacts: {
+                title: 'Contacts',
+                map: 'Map'
             }
              members:{
                 
