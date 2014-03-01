@@ -590,6 +590,14 @@ footer ul li a img {
    Responsive styles
    ========================================================================== */
 @media only screen and (max-width: 978px) {
+
+	#header {
+		position: relative;
+		top: auto;
+		left: auto;
+	}
+
+
 	.logo {
 		width: 30%;
 	}
