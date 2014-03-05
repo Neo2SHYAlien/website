@@ -3,7 +3,7 @@
           <header>
             <h2><%= I18n.t('members.membership') %></h2>
             <p><span class="highlight"></span><%= I18n.t('members.about') %></p>
-            <p><a href="#contacts"><%= I18n.t('members.about') %></p>
+            <p><a href="#contacts"><%= I18n.t('members.contacts') %></a></p>
             <div class="clear"></div>
           </header>
           <div class="contentMember">
@@ -11,8 +11,8 @@
             <div class="regMember">
               <h3>reg <span>member</span></h3>
               <ul>
-                <li><%= I18n.t('members.reg')  %> </li>
-                <li><%= I18n.t('members.reg1') %> </li>
+                <li><%= I18n.t('members.reg')  %></li>
+                <li><%= I18n.t('members.reg1') %></li>
                 <li><%= I18n.t('members.reg2') %></li>
                 <li><%= I18n.t('members.reg3') %></li>
               </ul>
@@ -28,9 +28,9 @@
             </div>
             <!-- End of proMember -->
             <div class="clear"></div>
-            <p class="center"> <%= I18n.t('members.type') %> Всички членове имат равни права в <span class="highlight">hackafe</span> независимо от нивото на членство.</p>
-			 <p class="center"><span class="highlight">Как да платим?</span></p>
-             <p class="center">С банков превод до сметката на &quot;Хакафе&quot; в ПроКредит Банк:</p>
+            <p class="center"> <%= I18n.t('members.members') %></p>
+      <p class="center"><span class="highlight"><%= I18n.t('members.payment')%></span></p>
+             <p class="center"><%= I18n.t('members.bankaccount')  %></p>
              <p class="center">IBAN: BG36PRCB92301045641219</p>
 			 <form class="center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
