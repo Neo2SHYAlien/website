@@ -365,20 +365,26 @@ section#aboutHackafe header h2 span.white {
 /*--------------------------------------------------------------
 	contentContainer => member
 --------------------------------------------------------------*/
-section#member {
+#member {
 	padding:60px 0 50px 0;
 	background:#ffffff;
 	border-bottom:1px solid #aaaaaa;
 }
 
-section#member header {
+#member .content {
+	max-width: 1060px;
+	margin: 0 auto;
+}
+
+#member header {
 	height:135px;
 	padding:50px 50px 0 0;
 	margin:0 0 25px 0;
 	background:url(../img/bg-header-member.jpg) 0 bottom repeat-x;
 }
 
-section#member header h2 {
+#member header h2 {
+	width: 40%;
 	font-weight:900;
 	float:left;
 	margin:0 80px 0 0;
@@ -387,45 +393,45 @@ section#member header h2 {
 	text-transform:uppercase;
 }
 
-section#member header h2 span {
+#member header h2 span {
 	font-weight:300;
 }
 
-section#member header h2 span.block {
+#member header h2 span.block {
 	display:block;
 }
 
-section#member .contentMember {
+#member .contentMember {
 	min-height:250px;
 	padding:15px 0 0 0;
 	background:url(../img/bg-content-member.jpg) 6px 0 no-repeat;
 }
 
-section#member .contentMember .regMember,
-section#member .contentMember .proMember {
+#member .contentMember .regMember,
+#member .contentMember .proMember {
 	float:left;
 	width:480px;
 	padding:50px 0 0 0;
 }
 
-section#member .contentMember .regMember {
+#member .contentMember .regMember {
 	margin:0 20px 0 40px;
 }
 
-section#member .contentMember .regMember h3,
-section#member .contentMember .proMember h3 {
+#member .contentMember .regMember h3,
+#member .contentMember .proMember h3 {
 	font-weight:900;
 	font-size:100px;
 	line-height:normal;
 	text-align:center;
 }
 
-section#member .contentMember .proMember h3 {
+#member .contentMember .proMember h3 {
 	margin-left:40px;
 }
 
-section#member .contentMember .regMember h3 span,
-section#member .contentMember .proMember h3 span {
+#member .contentMember .regMember h3 span,
+#member .contentMember .proMember h3 span {
 	font-weight:300;
 	font-size:20px;
 	text-transform:uppercase;
@@ -433,8 +439,8 @@ section#member .contentMember .proMember h3 span {
 	top:-15px;
 }
 
-section#member .contentMember .regMember ul,
-section#member .contentMember .proMember ul {
+#member .contentMember .regMember ul,
+#member .contentMember .proMember ul {
 	width:380px;
 	padding:50px;
 	margin:0 0 20px 0;
@@ -445,8 +451,8 @@ section#member .contentMember .proMember ul {
 	border-radius: 10px;
 }
 
-section#member .contentMember .regMember ul li,
-section#member .contentMember .proMember ul li {
+#member .contentMember .regMember ul li,
+#member .contentMember .proMember ul li {
 	padding:0 0 0 30px;
 	background:url(../img/bg-ul-li.png) left 15px no-repeat;
 }
@@ -610,8 +616,33 @@ footer ul li a img {
 	#aboutHackafe {
 		background-position: -150px 0;
 	}
-}
 
+}
+@media only screen and (max-width: 1060px) {
+/* member's page style */
+	#member header {
+		height: auto;
+		padding-right: 0;
+		text-align: center;
+	}
+	#member header h2 {
+		width: 100%;
+		float: none;	
+	}
+	#member .contentMember {
+		background: none;
+	}
+	#member .contentMember .regMember, 
+	#member .contentMember .proMember,
+	#member .contentMember .regMember ul, 
+	#member .contentMember .proMember ul {
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+}
 @media only screen and (max-width: 959px) {
 
 	#hackerSpace span.top,
