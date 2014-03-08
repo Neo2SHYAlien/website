@@ -97,9 +97,8 @@
                 logo: 'Hackafe Plovdiv'
             },
 
-
             homePage: {
-                title: 'PLOV<span>&lt;DIV&gt;</span>',
+                title: '<span>Hackafe</span> PLOV<span>&lt;DIV&gt;</span>',
                 subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
                 aboutTitle: '<span class="white">What is</span><span class="black">hackafe</span>',
                 Hackafe: '<span class="highlight">Hackafe Plovdiv</span>',
