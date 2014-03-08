@@ -460,43 +460,47 @@ section#aboutHackafe header h2 span.white {
 /*--------------------------------------------------------------
 	contentContainer => contacts
 --------------------------------------------------------------*/
-section#contacts {
+#contacts {
 	padding:60px 0 100px 0;
 	background:#f9f9f9;
 }
 
-section#contacts header {
+#contacts header {
 	padding:0 0 30px 0;
 }
 
-section#contacts header h2 {
-	float:left;
-	line-height:normal;
-	color:#909090;
-	font-weight:900;
-	font-size:86px;
-	letter-spacing:-0.08em;
-	margin:0 20px 0 40px;
+#contacts header h2 {
+	float: left;
+	line-height: normal;
+	color: #909090;
+	font-weight: 900;
+	font-size: 86px;
+	letter-spacing: -0.08em;
+	margin: 0 40px 0 40px;
 }
 
-section#contacts header address {
-	color:#909090;
-	float:left;
-	font-size:24px;
-	font-weight:300;
-	font-style:normal;
-	padding:0 0 0 40px;
-	position:relative;
-	top:46px;
-	background:url(../img/map-icon.png) left center no-repeat;
+#contacts header address {
+	color: #909090;
+	float: left;
+	font-size: 24px;
+	font-weight: 300;
+	font-style: normal;
+	padding:0 40px 0 40px;
+	background: url(../img/map-icon.png) left center no-repeat;
 }
 
-section#contacts ul.contactMembers li {
-	float:left;
-	width:310px;
-	padding:0 0 0 30px;
-	margin:0 0 0 10px;
-	border-right:1px solid #aaaaaa;
+#contacts {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+#contacts .contactMembers li {
+	float: left;
+	padding: 0 0 0 30px;
+	margin: 0 10px 0 10px;
+	border-right: 1px solid #aaaaaa;
+	width: 305px;
 }
 
 section#contacts ul.contactMembers li:last-child {
@@ -627,14 +631,14 @@ footer ul li a img {
 	}
 	#member header h2 {
 		width: 100%;
-		float: none;	
+		float: none;
 	}
 	#member .contentMember {
 		background: none;
 	}
-	#member .contentMember .regMember, 
+	#member .contentMember .regMember,
 	#member .contentMember .proMember,
-	#member .contentMember .regMember ul, 
+	#member .contentMember .regMember ul,
 	#member .contentMember .proMember ul {
 		width: 100%;
 		float: none;
@@ -649,6 +653,18 @@ footer ul li a img {
 	#hackerSpace span.bottom {
 		font-size: 60px;
 		line-height: 50px;
+	}
+
+	#contacts .contactMembers li {
+		width: 90%;
+		float: none;
+		border: none;
+	}
+
+	#contacts .contactMembers li + li{
+		margin-top: 25px;
+		padding-top: 25px;
+
 	}
 }
 
