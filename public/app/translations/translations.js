@@ -22,8 +22,8 @@
     
 
             homePage: {
-                subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
                 title: 'PLOV<span>&lt;DIV&gt;</span>',
+                subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
                 aboutTitle: '<span class="white">Какво е</span><span class="black">hackafe</span>',
                 Hackafe: '<span class="highlight">Hackafe Plovdiv</span>',
 
@@ -98,8 +98,9 @@
             },
 
 
-            homePage: {                subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
+            homePage: {                
                 title: 'PLOV<span>&lt;DIV&gt;</span>',
+                subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
                 aboutTitle: '<span class="white">What is</span><span class="black">hackafe</span>',
                 Hackafe: '<span class="highlight">Hackafe Plovdiv</span>',
                 WhoWeAre: 'We are young, nterprising, educated and proactive. We create new technology and the future. We change the world.',
