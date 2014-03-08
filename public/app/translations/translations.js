@@ -21,11 +21,47 @@
 
     
 
+            homePage: {
+                subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
+                title: '<h2>PLOV<span>&lt;DIV&gt;</span></h2>',
+                aboutTitle: '<span class="white">Какво е</span><span class="black">hackafe</span>',
+                Hackafe: '<span class="highlight">Hackafe Plovdiv</span>',
+
+                WhoWeAre: '<p>Ние сме млади, предприемчиви, образовани и инициативни. Ние създаваме новите технологии и бъдещето. Ние променяме света.</p>',
+                HackafePlace: '<p>Hackafe Plovdiv е <a href="#location">мястото</a>, на което обменяме и споделяме идеи, получаваме нови знания, правим нови контакти.</p>',
+                organize: '<p>Организираме курсове, срещи, лекции и конференции в Пловдив:</p>',
+
+                topics: 'Актуални теми от уеб технологиите, дизайна и програмирането.',
+                host: 'Домакин на годишното <a href="http://plovdivconf.com" rel="external">PlovdivConf</a> издание.',
+                conference: 'Съорганизатор на конференцията <a href="http://plovdev.com" rel="external">PlovDev</a>.',
+
+                videoPresentacion: '<p>Видеопрезентации от наши членове:</p>',
+                videoPrLinks1: '<a href="https://www.youtube.com/watch?v=HVN5gKdjo0o" rel="external">Представяне на Hackafe, Георги Ангелов</a>',
+                videoPrLinks2: '<a href="https://www.youtube.com/watch?v=LqeLpRcZZqQ" rel="external">Хакерските пространства в България, OpenFest 2013, Валентин Алексиев</a>',
+                videoPrLinks3: '<a href="https://www.youtube.com/watch?v=WmLFKdpVGYg" rel="external">Целите на Хакафе, PlovdivConf, Станислав Куманов</a>',
+                
+                aboutUsPic:'<img src="images/about-us-photo.png" alt="About hackafe"/>',
+                facebookGroup: '<a href="https://www.facebook.com/HackafePlovdiv" rel="external" title="Facebook">',
+                facebookButton: '<img src="images/facebook.jpg" alt="Facebook"/> </a> Следете ни във <br/>Фейсбук &gt; &gt; &gt;</p>'
+            },
+
             contacts: {
                 title: 'Контакти',
+                map: 'Карта',
+                street: 'G Street View',
+                contacts: 'Контакти',
+                org: 'Сдружение с нестопанска цел "Хакафе"',
+                loc: 'пл. "Гроздов Пазар" №2, 4000 Пловдив, България',
+                chief: 'Вожд',
+                events: 'Събития',
+                finance: 'Финанси',
+                manager: 'Офис мениджър',
+                common: 'Общ',
+                announcement: 'Известия',
+                system: 'Онлайн система'
 
-                map: 'Карта'
             },
+
             members:{
 
                 membership: '<span class="block">Как да стана член<span>?</span>',
@@ -44,13 +80,6 @@
                 bankaccount:"С банков превод до сметката на &quot;Хакафе&quot; в ПроКредит Банк:",
                 IBAN: "BG36PRCB9230104564"
 
-                
-
-
-            },
-
-            homePage: {
-                title: '<span class="white">Какво е</span><span class="black">hackafe</span>'
             }
 
         };
@@ -72,12 +101,47 @@
 
 
 
+            homePage: {
+                subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
+                title: '<h2>PLOV<span>&lt;DIV&gt;</span></h2>',
+                aboutTitle: '<span class="white">What is</span><span class="black">hackafe</span>',
+                Hackafe: '<span class="highlight">Hackafe Plovdiv</span>',
+
+                WhoWeAre: '<p>We are young, nterprising, educated and proactive. We create new technology and the future. We change the world.</p>',
+                HackafePlace: '<p> Hackafe Plovdiv is <a href="#location"> place </ a>, where we exchange and share ideas, get new skills, make new contacts. </p>',
+                organize: '<p> We organize courses, meetings, lectures and conferences in Plovdiv: </p>',
+
+                topics: 'Current topics of web technology, design and programming.',
+                host: 'Host the annual <a href="http://plovdivconf.com" rel="external"> PlovdivConf </a> edition.',
+                conference: 'Co-organizer of the conference <li> <a href="http://plovdev.com" rel="external"> PlovDev </a>.',
+
+                videoPresentacion: '<p>Video presentations from our members:</p>',
+                videoPrLinks1:'<a href="https://www.youtube.com/watch?v=HVN5gKdjo0o" rel="external"> Presentation Hackafe, Georgi Angelov </a>',
+                videoPrLinks1:'<a href="https://www.youtube.com/watch?v=LqeLpRcZZqQ" rel="external"> Hacker spaces in Bulgaria, OpenFest 2013, Valentin Alexiev </a>',
+                videoPrLinks1:'<a href="https://www.youtube.com/watch?v=WmLFKdpVGYg" rel="external"> objectives of Hakafe, PlovdivConf, Stanislav Kumanov </a>',
+                
+                facebookGroup:'<img src="images/about-us-photo.png" alt="About hackafe"/>',
+                facebookButton: '<p><a href="https://www.facebook.com/HackafePlovdiv" rel="external" title="Facebook">',
+                facebookGroup: '<img src="images/facebook.jpg" alt="Facebook"/></a> Follow us on<br/>Фейсбук &gt; &gt; &gt;</p>'
+            },
+
             contacts: {
                 title: 'Contacts',
-
-                map: 'Map'
+                map: 'Map',
+                street: 'G Street View',
+                contacts: 'Contacts'
+                org: 'Non-profit organization "Hakafe"',
+                loc: '"Grozdov Pazar" №2, 4000 Plovdiv, Bulgaria',
+                chief: 'Chief',
+                events: 'Events',
+                finance: 'Finance',
+                manager: 'Office manager',
+                common: 'Common',
+                announcement: 'Announcement',
+                system: 'Online system'
             },
-             members:{
+
+            members:{
                 
                 membership:"How to become a member?",
                 about:'<span class="highlight"><a href="#contacts">Hackafe</a></span> is an open group and everyone can become a part of it.',
@@ -94,15 +158,6 @@
                 payment:"How to pay?",
                 bankaccount:"With a bank transfer to the account of Hackafe in ProCredit Bank.",
                 IBAN: "BG36PRCB92301045641219"
-
-
-               
-
-            },
-
-
-            homePage: {
-                title: '<span class="white">What is</span><span class="black">hackafe</span>'
             }
         };
 
