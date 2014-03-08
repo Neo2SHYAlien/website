@@ -104,7 +104,7 @@ homePage: {
                 title: 'Contacts',
                 map: 'Map',
                 street: 'G Street View',
-                contacts: 'Contacts'
+                contacts: 'Contacts',
                 org: 'Non-profit organization "Hakafe"',
                 loc: '"Grozdov Pazar" №2, 4000 Plovdiv, Bulgaria',
                 chief: 'Chief',
