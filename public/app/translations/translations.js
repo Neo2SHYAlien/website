@@ -37,7 +37,7 @@ define(['I18n'],
                 videoPrLinks1: '<a href="https://www.youtube.com/watch?v=HVN5gKdjo0o" rel="external">Представяне на Hackafe, Георги Ангелов</a>',
                 videoPrLinks2: '<a href="https://www.youtube.com/watch?v=LqeLpRcZZqQ" rel="external">Хакерските пространства в България, OpenFest 2013, Валентин Алексиев</a>',
                 videoPrLinks3: '<a href="https://www.youtube.com/watch?v=WmLFKdpVGYg" rel="external">Целите на Хакафе, PlovdivConf, Станислав Куманов</a>',
-                
+
                 aboutUsPic:'<img src="images/about-us-photo.png" alt="About hackafe"/>',
                 facebookGroup: '<a href="https://www.facebook.com/HackafePlovdiv" rel="external" title="Facebook">',
                 facebookButton: '<img src="images/facebook.jpg" alt="Facebook"/> </a> Следете ни във <br/>Фейсбук &gt; &gt; &gt;</p>'
@@ -76,15 +76,15 @@ define(['I18n'],
                 logo: 'Hackafe Plovdiv'
             },
 
-homePage: {
+            homePage: {
                 subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
-                title: '<h2>PLOV<span>&lt;DIV&gt;</span></h2>',
+                title: 'PLOV<span>&lt;DIV&gt;</span>',
                 aboutTitle: '<span class="white">What is</span><span class="black">hackafe</span>',
                 Hackafe: '<span class="highlight">Hackafe Plovdiv</span>',
 
-                WhoWeAre: '<p>We are young, nterprising, educated and proactive. We create new technology and the future. We change the world.</p>',
-                HackafePlace: '<p> Hackafe Plovdiv is <a href="#location"> place </ a>, where we exchange and share ideas, get new skills, make new contacts. </p>',
-                organize: '<p> We organize courses, meetings, lectures and conferences in Plovdiv: </p>',
+                WhoWeAre: 'We are young, nterprising, educated and proactive. We create new technology and the future. We change the world.',
+                HackafePlace: 'Hackafe Plovdiv is <a href="#location"> place </a>, where we exchange and share ideas, get new skills, make new contacts.',
+                organize: 'We organize courses, meetings, lectures and conferences in Plovdiv:',
 
                 topics: 'Current topics of web technology, design and programming.',
                 host: 'Host the annual <a href="http://plovdivconf.com" rel="external"> PlovdivConf </a> edition.',
@@ -92,12 +92,12 @@ homePage: {
 
                 videoPresentacion: '<p>Video presentations from our members:</p>',
                 videoPrLinks1:'<a href="https://www.youtube.com/watch?v=HVN5gKdjo0o" rel="external"> Presentation Hackafe, Georgi Angelov </a>',
-                videoPrLinks1:'<a href="https://www.youtube.com/watch?v=LqeLpRcZZqQ" rel="external"> Hacker spaces in Bulgaria, OpenFest 2013, Valentin Alexiev </a>',
-                videoPrLinks1:'<a href="https://www.youtube.com/watch?v=WmLFKdpVGYg" rel="external"> objectives of Hakafe, PlovdivConf, Stanislav Kumanov </a>',
-                
+                videoPrLinks2:'<a href="https://www.youtube.com/watch?v=LqeLpRcZZqQ" rel="external"> Hacker spaces in Bulgaria, OpenFest 2013, Valentin Alexiev </a>',
+                videoPrLinks3:'<a href="https://www.youtube.com/watch?v=WmLFKdpVGYg" rel="external"> objectives of Hakafe, PlovdivConf, Stanislav Kumanov </a>',
+
                 facebookGroup:'<img src="images/about-us-photo.png" alt="About hackafe"/>',
-                facebookButton: '<p><a href="https://www.facebook.com/HackafePlovdiv" rel="external" title="Facebook">',
-                facebookGroup: '<img src="images/facebook.jpg" alt="Facebook"/></a> Follow us on<br/>Фейсбук &gt; &gt; &gt;</p>'
+                facebookButton: '<a href="https://www.facebook.com/HackafePlovdiv" rel="external" title="Facebook">',
+                facebookGroup2: '<img src="images/facebook.jpg" alt="Facebook"/></a> Follow us on<br/>Фейсбук &gt; &gt; &gt;</p>'
             },
 
             contacts: {
