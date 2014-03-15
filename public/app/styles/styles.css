@@ -10,6 +10,54 @@
 	outline:none;
 }
 
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+
 /*--------------------------------------------------------------*/
 /*-------------[ global tags, selectors, classes ]--------------*/
 /*--------------------------------------------------------------*/
@@ -537,7 +585,6 @@ section#contacts ul.contactMembers li a.angeloff {
 }
 
 #events h1 {
-	font-weight: normal;
 	padding: 30px 0 20px 0;
 	border-bottom: 2px solid #fff43e;
 	font-size: 38px;
@@ -566,7 +613,7 @@ section#contacts ul.contactMembers li a.angeloff {
 	text-decoration: none;
 }
 
-.inner-navigation.size-2 a:hover {
+.inner-navigation.size-2 a:hover, .inner-navigation.size-2 a.active {
 	background: #4a96ea;
 	color: #FFF;
 }
@@ -575,6 +622,60 @@ section#contacts ul.contactMembers li a.angeloff {
 	margin-left: 0.5%;
 	width: 50%;
 }
+
+#events h2 {
+	margin-bottom: 0px;
+	padding: 0 20px;
+	border-top: 1px solid #7e7e7e;
+	background: #ecebe8;
+	font-size: 20px;
+	line-height: 38px;
+	font-weight: 300;
+}
+
+#events h3 {
+	font-size: 18px;
+}
+#events p {
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+
+#events .section {
+	display: none;
+}
+
+#events .section.visible {
+	display: block;
+}
+
+.date{
+	font-size: 12px;
+	line-height: 14px;
+	color: #666666;
+}
+.fb-link{
+	font-size: 	12px;
+}
+.article-background{
+	background: url(../img/article-background.png) 20px 30px no-repeat;
+	padding-left: 130px;
+	border-bottom: 1px solid #fff43e;
+	padding-top: 30px;
+}
+
+.event {
+}
+
+.pagination  {
+	
+	border-top: 1px solid #e7e7e7;
+	color: #000;
+	font-size: 16px;
+	line-height: 40px;
+}
+
 /*--------------------------------------------------------------*/
 /*--------------------------[ =footer ]-------------------------*/
 /*--------------------------------------------------------------*/
