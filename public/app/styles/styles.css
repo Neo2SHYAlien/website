@@ -1,4 +1,4 @@
-@charset "utf-8";
+ @charset "utf-8";
 
 /*--------------------------------------------------------------*/
 /*--------------------[ CSS Document reset ]--------------------*/
@@ -514,6 +514,53 @@ section#contacts ul.contactMembers li a.angeloff {
 	margin-left:10px;
 }
 
+
+/* ==========================================================================
+   Events style.
+   ========================================================================== */
+#events {
+	padding: 0 75px;
+}
+
+#events h1 {
+	font-weight: normal;
+	padding: 30px 0 20px 0;
+	border-bottom: 2px solid #fff43e;
+	font-size: 38px;
+	line-height: 48px;
+	font-weight: 300;
+	margin-bottom: 50px;
+}
+
+.inner-navigation {
+	overflow: hidden;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.inner-navigation.size-2 a {
+	display: block;
+	width: 49.5%;
+	float: left;
+	
+	border-top: 1px solid #7e7e7e;
+	background: #ecebe8;
+	
+	color: #000;
+	font-size: 16px;
+	line-height: 40px;
+	text-decoration: none;
+}
+
+.inner-navigation.size-2 a:hover {
+	background: #4a96ea;
+	color: #FFF;
+}
+
+.inner-navigation.size-2 a + a{
+	margin-left: 0.5%;
+	width: 50%;
+}
 /*--------------------------------------------------------------*/
 /*--------------------------[ =footer ]-------------------------*/
 /*--------------------------------------------------------------*/
