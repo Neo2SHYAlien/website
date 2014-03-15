@@ -19,10 +19,10 @@
                 logo: 'Hackafe Plovdiv'
             },
 
-    
+
 
             homePage: {
-                title: 'PLOV<span>&lt;DIV&gt;</span>',
+                title: '<span>Hackafe</span> PLOV<span>&lt;DIV&gt;</span>',
                 subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
                 aboutTitle: '<span class="white">Какво е</span><span class="black">hackafe</span>',
                 Hackafe: '<span class="highlight">Hackafe Plovdiv</span>',
@@ -97,9 +97,8 @@
                 logo: 'Hackafe Plovdiv'
             },
 
-
-            homePage: {                
-                title: 'PLOV<span>&lt;DIV&gt;</span>',
+            homePage: {
+                title: '<span>Hackafe</span> PLOV<span>&lt;DIV&gt;</span>',
                 subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
                 aboutTitle: '<span class="white">What is</span><span class="black">hackafe</span>',
                 Hackafe: '<span class="highlight">Hackafe Plovdiv</span>',
@@ -138,7 +137,7 @@
             },
 
             members:{
-                
+
                 membership:"How to become a member?",
                 about:'<span class="highlight"><a href="#contacts">Hackafe</a></span> is an open group and everyone can become a part of it.',
                 contacts:'<a>Contact</a> us or come visit us <a href="#location">at.</a>',

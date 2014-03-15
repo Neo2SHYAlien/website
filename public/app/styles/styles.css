@@ -48,8 +48,8 @@ p {
 }
 
 a {
-	text-decoration:none;
-	color:#FCDB04;
+	text-decoration: none;
+	color: #1d6ac5;
 }
 
 a:hover {
@@ -100,10 +100,10 @@ img {
 #header {
 	width: 100%;
 	/*height:98px;*/
-	position: fixed;
+	/*position: fixed;*/
 	z-index: 100;
-	top: 0;
-	left: 0;
+	/*top: 0;*/
+	/*left: 0;*/
 	background: #f9f9f9;
 	border-bottom: 1px solid #aaaaaa;
 }
@@ -219,49 +219,49 @@ header#header ul#navi2 li {
 /*--------------------------------------------------------------
 	contentContainer => hackerSpace
 --------------------------------------------------------------*/
-section#hackerSpace {
-	width:100%;
-	min-height:605px;
-	padding:30px 0 0 0;
-	background:url(../images/bg-hacker-space.jpg) center 0 repeat-x;
+#hackerSpace {
+	width: 100%;
+	min-height: 185px;
+	padding: 30px 0 0 0;
+	background: url(../img/bg-hacker-space.jpg) center 0 repeat-x;
 }
 
-section#hackerSpace h2 {
-	text-align:center;
-	font-size:220px;
-	font-weight:890;
-	line-height:normal;
-	letter-spacing:-0.05em;
-	color:#000000;
+#hackerSpace h2 {
+	text-align: center;
+	font-size: 100px;
+	font-weight: 800;
+	line-height: normal;
+	letter-spacing: -0.05em;
+	color: #000000;
 }
 
-section#hackerSpace h2 span {
+#hackerSpace h2 span {
 	color:#FCDB04;
 }
 
-section#hackerSpace blockquote {
+#hackerSpace blockquote {
 	display:block;
-	width:820px;
-	padding:0 0 0 240px;
+	/*width: 820px;*/
 	margin:0 auto 40px auto;
+	text-align: center;
 }
 
-section#hackerSpace blockquote span.top {
-	display:block;
-	color:#e5e5e5;
-	font-weight:100;
-	font-size:100px;
-	line-height:60px;
-	letter-spacing:-0.05em;
+#hackerSpace span.top {
+	display: block;
+	color: #BDBDBD;
+	font-weight: 100;
+	font-size: 80px;
+	line-height: 60px;
+	letter-spacing: -0.05em;
 }
 
-section#hackerSpace blockquote span.bottom {
-	display:block;
-	color:#909090;
-	font-weight:100;
-	font-size:118px;
-	letter-spacing:-0.05em;
-	line-height:60px;
+#hackerSpace span.bottom {
+	display: block;
+	color: #909090;
+	font-weight: 100;
+	font-size: 118px;
+	letter-spacing: -0.05em;
+	line-height: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -297,7 +297,7 @@ section#location ul.nav li a.current {
 	text-decoration:none;
 }
 
-section#location iframe {
+#location iframe {
 	margin:0;
 	padding:0;
 }
@@ -305,15 +305,14 @@ section#location iframe {
 /*--------------------------------------------------------------
 	contentContainer => aboutHackafe
 --------------------------------------------------------------*/
-section#aboutHackafe {
-	width:100%;
-	height:580px;
-	padding:60px 0 0 0;
-	background:url(../images/bg-about-hackafe.jpg) center 0 no-repeat;
-	border-bottom:1px solid #aaaaaa;
+#aboutHackafe {
+	width: 100%;
+	/*height: 580px;*/
+	padding: 60px 0 0 0;
+	background: url(../img/bg-about-hackafe.jpg) 0 0 no-repeat;
 }
 
-section#aboutHackafe header {
+#aboutHackafe header {
 	padding:40px 0 0 60px;
 }
 
@@ -330,51 +329,62 @@ section#aboutHackafe header h2 span.white {
 	padding:0 50px 0 0;
 }
 
-section#aboutHackafe header h2 span.black {
-	color:#000000;
-	font-weight:900;
-	font-size:100px;
+#aboutHackafe header h2 span.black {
+	color: #000000;
+	font-weight: 900;
+	font-size: 100px;
 }
 
-section#aboutHackafe .contentAboutHackafe {
-	width:580px;
-	margin:0 0 0 420px;
+#aboutHackafe .contentAboutHackafe {
+	margin: 0 auto;
+	max-width: 800px;
 }
 
-section#aboutHackafe ul.socialNavi {
+#aboutHackafe ul.socialNavi {
 	float:left;
 	padding:20px 0 0 0;
 	margin:0 0 0 301px;
 }
 
-section#aboutHackafe ul.socialNavi li {
+#aboutHackafe ul.socialNavi li {
 	float:left;
 	height:76px;
 	line-height:76px;
 	margin:0 34px 0 0;
 }
 
-section#aboutHackafe ul.socialNavi li.text {
+#aboutHackafe .contentAboutHackafe ul li {
+	padding: 0 0 0 30px;
+	background: url(../img/bg-ul-li.png) left 15px no-repeat;
+}
+
+#aboutHackafe ul.socialNavi li.text {
 
 }
 
 /*--------------------------------------------------------------
 	contentContainer => member
 --------------------------------------------------------------*/
-section#member {
+#member {
 	padding:60px 0 50px 0;
 	background:#ffffff;
 	border-bottom:1px solid #aaaaaa;
 }
 
-section#member header {
+#member .content {
+	max-width: 1060px;
+	margin: 0 auto;
+}
+
+#member header {
 	height:135px;
 	padding:50px 50px 0 0;
 	margin:0 0 25px 0;
-	background:url(../images/bg-header-member.jpg) 0 bottom repeat-x;
+	background:url(../img/bg-header-member.jpg) 0 bottom repeat-x;
 }
 
-section#member header h2 {
+#member header h2 {
+	width: 40%;
 	font-weight:900;
 	float:left;
 	margin:0 80px 0 0;
@@ -383,45 +393,45 @@ section#member header h2 {
 	text-transform:uppercase;
 }
 
-section#member header h2 span {
+#member header h2 span {
 	font-weight:300;
 }
 
-section#member header h2 span.block {
+#member header h2 span.block {
 	display:block;
 }
 
-section#member .contentMember {
+#member .contentMember {
 	min-height:250px;
 	padding:15px 0 0 0;
-	background:url(../images/bg-content-member.jpg) 6px 0 no-repeat;
+	background:url(../img/bg-content-member.jpg) 6px 0 no-repeat;
 }
 
-section#member .contentMember .regMember,
-section#member .contentMember .proMember {
+#member .contentMember .regMember,
+#member .contentMember .proMember {
 	float:left;
 	width:480px;
 	padding:50px 0 0 0;
 }
 
-section#member .contentMember .regMember {
+#member .contentMember .regMember {
 	margin:0 20px 0 40px;
 }
 
-section#member .contentMember .regMember h3,
-section#member .contentMember .proMember h3 {
+#member .contentMember .regMember h3,
+#member .contentMember .proMember h3 {
 	font-weight:900;
 	font-size:100px;
 	line-height:normal;
 	text-align:center;
 }
 
-section#member .contentMember .proMember h3 {
+#member .contentMember .proMember h3 {
 	margin-left:40px;
 }
 
-section#member .contentMember .regMember h3 span,
-section#member .contentMember .proMember h3 span {
+#member .contentMember .regMember h3 span,
+#member .contentMember .proMember h3 span {
 	font-weight:300;
 	font-size:20px;
 	text-transform:uppercase;
@@ -429,8 +439,8 @@ section#member .contentMember .proMember h3 span {
 	top:-15px;
 }
 
-section#member .contentMember .regMember ul,
-section#member .contentMember .proMember ul {
+#member .contentMember .regMember ul,
+#member .contentMember .proMember ul {
 	width:380px;
 	padding:50px;
 	margin:0 0 20px 0;
@@ -441,52 +451,56 @@ section#member .contentMember .proMember ul {
 	border-radius: 10px;
 }
 
-section#member .contentMember .regMember ul li,
-section#member .contentMember .proMember ul li {
+#member .contentMember .regMember ul li,
+#member .contentMember .proMember ul li {
 	padding:0 0 0 30px;
-	background:url(../images/bg-ul-li.png) left 15px no-repeat;
+	background:url(../img/bg-ul-li.png) left 15px no-repeat;
 }
 
 /*--------------------------------------------------------------
 	contentContainer => contacts
 --------------------------------------------------------------*/
-section#contacts {
+#contacts {
 	padding:60px 0 100px 0;
 	background:#f9f9f9;
 }
 
-section#contacts header {
+#contacts header {
 	padding:0 0 30px 0;
 }
 
-section#contacts header h2 {
-	float:left;
-	line-height:normal;
-	color:#909090;
-	font-weight:900;
-	font-size:86px;
-	letter-spacing:-0.08em;
-	margin:0 20px 0 40px;
+#contacts header h2 {
+	float: left;
+	line-height: normal;
+	color: #909090;
+	font-weight: 900;
+	font-size: 86px;
+	letter-spacing: -0.08em;
+	margin: 0 40px 0 40px;
 }
 
-section#contacts header address {
-	color:#909090;
-	float:left;
-	font-size:24px;
-	font-weight:300;
-	font-style:normal;
-	padding:0 0 0 40px;
-	position:relative;
-	top:46px;
-	background:url(../images/map-icon.png) left center no-repeat;
+#contacts header address {
+	color: #909090;
+	float: left;
+	font-size: 24px;
+	font-weight: 300;
+	font-style: normal;
+	padding:0 40px 0 40px;
+	background: url(../img/map-icon.png) left center no-repeat;
 }
 
-section#contacts ul.contactMembers li {
-	float:left;
-	width:310px;
-	padding:0 0 0 30px;
-	margin:0 0 0 10px;
-	border-right:1px solid #aaaaaa;
+#contacts {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+#contacts .contactMembers li {
+	float: left;
+	padding: 0 0 0 30px;
+	margin: 0 10px 0 10px;
+	border-right: 1px solid #aaaaaa;
+	width: 305px;
 }
 
 section#contacts ul.contactMembers li:last-child {
@@ -571,10 +585,8 @@ section#contacts ul.contactMembers li a.angeloff {
 }
 
 footer {
-	width:100%;
 	height: 180px;
-	margin:0 auto;
-	border-top:1px solid #aaaaaa;
+	margin: 0 auto;
 }
 
 footer .footerContent {
@@ -650,6 +662,63 @@ footer ul li a img {
 	}
 	.logo img {
 		width: 100%;
+	}
+
+	#aboutHackafe {
+		background-position: -150px 0;
+	}
+
+}
+@media only screen and (max-width: 1060px) {
+/* member's page style */
+	#member header {
+		height: auto;
+		padding-right: 0;
+		text-align: center;
+	}
+	#member header h2 {
+		width: 100%;
+		float: none;
+	}
+	#member .contentMember {
+		background: none;
+	}
+	#member .contentMember .regMember,
+	#member .contentMember .proMember,
+	#member .contentMember .regMember ul,
+	#member .contentMember .proMember ul {
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 959px) {
+
+	#hackerSpace span.top,
+	#hackerSpace span.bottom {
+		font-size: 60px;
+		line-height: 50px;
+	}
+
+	#contacts .contactMembers li {
+		width: 90%;
+		float: none;
+		border: none;
+	}
+
+	#contacts .contactMembers li + li{
+		margin-top: 25px;
+		padding-top: 25px;
+
+	}
+}
+
+@media only screen and (max-width: 925px) {
+
+	#aboutHackafe .contentAboutHackafe {
+		margin: 0 10%;
 	}
 }
 
