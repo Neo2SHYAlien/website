@@ -528,6 +528,76 @@ section#contacts ul.contactMembers li a.angeloff {
 	margin-left:10px;
 }
 
+/* ==========================================================================
+   Announcements style.
+   ========================================================================== */
+
+
+
+
+#ann-navigation {
+	
+	padding: 0 0 45px 0 ;
+	overflow: hidden;
+	text-align: center;
+	border-bottom: 1px solid #fff441 ;
+}
+
+#ann-navigation a {
+	
+	font-family:roboto;
+	text-decoration: none;
+	width: 49.5%;
+	display: inline-block;
+	width: 30%;
+	border-top: 1px solid #7e7e7e;
+	background: #ecebe8;
+	color: #0000;
+	font-size: 16px;
+	line-height: 40px;
+	text-decoration: none;
+
+	
+
+	}
+
+#ann-navigation a:hover {
+	
+	background: #4a96ea;
+	color: #FFF;
+	
+	
+}
+
+#ann-head-tittle {
+	padding-top: 60px;
+	padding-bottom: 10px;
+	font-size: 42px;
+	margin: 0 63px 45px 63px ;
+	font-family:roboto;
+	border-bottom: 4px solid #fff100;
+
+}
+
+#ann-content {
+	
+	display: block;
+	margin: 0 63px 45px 63px;
+
+
+}
+
+
+
+.ann-text {
+	
+	background: url(../img/speaker.png)  no-repeat;
+	padding-left: 130px;
+	border-bottom: 1px solid #fff441;
+	padding-right: 10px;
+	
+}
+
 /*--------------------------------------------------------------*/
 /*--------------------------[ =footer ]-------------------------*/
 /*--------------------------------------------------------------*/
