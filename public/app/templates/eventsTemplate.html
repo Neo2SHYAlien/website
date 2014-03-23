@@ -3,20 +3,20 @@
     <section class="events">
         
         <header>
-            <h1>Събития и курсове</h1>
+            <h1><%= I18n.t('events.eventscourses') %></h1>
         </header>
 
         <nav id="events-menu" class="inner-navigation size-2">
-            <a href="javascript:;" data-target="upcoming" class="show-content active">Събития</a>
-            <a href="javascript:;" data-target="courses" class="show-content">Курсове</a>
+            <a href="javascript:;" data-target="upcoming" class="show-content active"><%= I18n.t('events.events') %></a>
+            <a href="javascript:;" data-target="courses" class="show-content"><%= I18n.t('events.courses') %></a>
         </nav>
 
         <div id="upcoming" class="section visible">
-            <h2>Предстоящи събития</h2>
+            <h2><%= I18n.t('events.upcoming') %></h2>
                 <article class="event article-background">
                     <h3>Super qko subitie v Hackafe |ASDasdasdasd</h3>
-                    <p class="date">
-                        Дата: 22.09.2014  Местоположение: Hackafe Plovdiv
+                    <p class="date"> 22.09.2014 
+                        <%= I18n.t('events.date') %>
                     </p>
                     <p>
                         Описание:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ut, quaerat, iste incidunt est natus deleniti inventore facilis quis corporis a aperiam error reiciendis veniam perspiciatis eaque dolores debitis ex!
@@ -29,7 +29,7 @@
                 <article class="event article-background">
                     <h3>Super qko subitie v Hackafe |ASDasdasdasd</h3>
                     <p class="date">
-                        Дата: 22.09.2014  Местоположение: Hackafe Plovdiv
+                        <%= I18n.t('events.date') %> 22.09.2014  Местоположение: Hackafe Plovdiv
                     </p>
                     <p>
                         Описание:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ut, quaerat, iste incidunt est natus deleniti inventore facilis quis corporis a aperiam error reiciendis veniam perspiciatis eaque dolores debitis ex!

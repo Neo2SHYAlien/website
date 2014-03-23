@@ -83,6 +83,20 @@
 
             },
 
+
+            events:{
+
+                eventscourses: "Събития и Курсове",
+                events: "Събития",
+                courses: "Курсове",
+                upcoming: "Предстоящи",
+                date: "Дата",
+                fblink: "FB Link"
+
+
+
+            },
+
             announcements:{
 
                 abouthackafe: "За Hackafe",
@@ -147,7 +161,23 @@
                 common: 'Common',
                 announcement: 'Announcement',
                 system: 'Online system'
+            
             },
+
+           events:{ 
+            
+            eventscourses: "Events and Courses",
+            events: "Events",
+            courses: "Courses",
+            upcoming: "Upcoming Events",
+            date: "Date",
+            fblink: "FB Link"
+
+
+
+
+
+           }, 
 
             members:{
 
