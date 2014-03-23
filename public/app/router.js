@@ -13,11 +13,12 @@ define([
   'views/MembersView',
   'views/SponsorsView',
   'views/ContactsView',
+  'views/AnnouncementsView',
   'models/EventsCollection',
   'models/ProjectsCollection',
   'models/SponsorsCollection',
   ],
-  function($, _, Backbone, I18n, translations, HeaderView, FooterView, IndexView, EventsView, ProjectView,MembersView, SponsorsView, ContactsView, EventsCollection, ProjectsCollection, SponsorsCollection) {
+  function($, _, Backbone, I18n, translations, HeaderView, FooterView, IndexView, EventsView, ProjectView,MembersView, SponsorsView, ContactsView, AnnouncementsView, EventsCollection, ProjectsCollection, SponsorsCollection) {
     // "use strict";
 
     var AppRouter = Backbone.Router.extend({
@@ -29,6 +30,7 @@ define([
             '!/events': 'events',
             '!/projects/:projectId': 'projects',
             '!/projects': 'projects',
+            '!/announcements': 'announcements',
             '!/sponsors': 'sponsors',
             '!/members': 'members',
             '!/contacts': 'contacts'
@@ -165,10 +167,50 @@ define([
             //Turn off all event events
             router.on('all', function (eventName) {
 
-                if(eventName && eventName.indexOf('route:') === 0 && eventName !== 'route:catalog') {
+                if(eventName && eventName.indexOf('route:') === 0 && eventName !== 'route:events') {
                     this.off(null, arguments.callee);
 
                     window.eventDispacher.off('language:update', router.views.eventView.render);
+                }
+
+            });
+
+        },
+
+        announcements: function() {
+            var router = this;
+
+
+            //updateHeader
+            if(router.views.headerView) {
+                router.views.headerView.render();
+            }else {
+                router.views.headerView = new HeaderView();
+            }
+
+            //updatePage content
+            if(router.views.announcementsView) {
+
+                router.views.announcementsView.render();
+
+            }else {
+
+                router.views.announcementsView = new AnnouncementsView();
+            }
+
+
+            //bind language update
+            //To DO: refactor language update mechanism
+            window.eventDispacher.off('language:update', router.views.announcementsView.render);
+            window.eventDispacher.on('language:update', router.views.announcementsView.render, router.views.announcementsView);
+
+            //Turn off all event events
+            router.on('all', function (eventName) {
+
+                if(eventName && eventName.indexOf('route:') === 0 && eventName !== 'route:announcements') {
+                    this.off(null, arguments.callee);
+
+                    window.eventDispacher.off('language:update', router.views.announcementsView.render);
                 }
 
             });
