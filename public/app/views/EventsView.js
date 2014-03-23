@@ -10,7 +10,9 @@ define([
 
         el: '#page-placeholder',
         template: null,
-        events: {},
+        events: {
+            'click .show-content': "switchTabs"
+        },
 
         initialize: function(options) {
             var view = this;
@@ -27,6 +29,18 @@ define([
 
             var compiledTemplate = _.template(eventsTemplate).call(this);
             view.$el.html(compiledTemplate);
+        },
+
+        switchTabs: function(evnt) {
+            
+            var target = $(evnt.target);
+            var dataTarget = target.data('target');
+
+            this.$el.find('.active').removeClass('active');
+            this.$el.find('.visible').removeClass('visible');
+            target.addClass('active');
+
+            $('#' + dataTarget).addClass('visible');
         }
 
     });
