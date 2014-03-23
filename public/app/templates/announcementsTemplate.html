@@ -2,13 +2,13 @@
 
 <div id="ann-main-container">
 
-	<div id="ann-head-tittle">Обяви</div>
+	<div id="ann-head-tittle"><%= I18n.t('announcements.announcement')  %></div>
 
 		<nav id="ann-navigation">
 
-			<a href="#">За Hackafe</a>
-			<a href="#">Платени</a>
-			<a href="#">Безплатни</a>
+			<a href="#"><%= I18n.t('announcements.abouthackafe') %></a>
+			<a href="#"><%= I18n.t('announcements.paid')  %></a>
+			<a href="#"><%= I18n.t('announcements.free')  %></a>
 
 		</nav>	
 
@@ -18,7 +18,7 @@
 		<div class="ann-text">
 
 			<p class="date">Дата: 28.12.2014</p>
-			<p>Описание: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla lectus quis vehicula pulvinar. Sed feugiat aliquet erat, sed molestie mauris elementum quis. Suspendisse pharetra massa mattis placerat vehicula. Integer ornare pulvinar pharetra. In rutrum augue id nunc rhoncus suscipit. Integer ornare massa dapibus, luctus lectus eu, mattis diam. Maecenas mattis iaculis est, sed rutrum massa sodales quis.</p>
+			<p><%= I18n.t('announcements.description')  %></p>
 			<p class="fb-link">Контакти: 8345629836836</p>
 
 		</div>
@@ -26,7 +26,7 @@
 		<div class="ann-text">
 
 			<p class="date">Дата</p>
-			<p > Описание: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla lectus quis vehicula pulvinar. Sed feugiat aliquet erat, sed molestie mauris elementum quis. Suspendisse pharetra massa mattis placerat vehicula. Integer ornare pulvinar pharetra. In rutrum augue id nunc rhoncus suscipit. Integer ornare massa dapibus, luctus lectus eu, mattis diam. Maecenas mattis iaculis est, sed rutrum massa sodales quis.</p>
+			<p > <%= I18n.t('announcements.description')  %></p>
 			<p class="fb-link">Контакти</p>
 
 		</div>

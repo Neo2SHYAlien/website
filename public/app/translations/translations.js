@@ -15,8 +15,10 @@
                 home: 'Начало',
                 member: 'Стани член',
                 events: 'Събития',
+                announcements: 'Обяви',
                 contacts: 'Контакти',
                 logo: 'Hackafe Plovdiv'
+
             },
 
 
@@ -79,6 +81,16 @@
                 bankaccount:"С банков превод до сметката на &quot;Хакафе&quot; в ПроКредит Банк:",
                 IBAN: "BG36PRCB9230104564"
 
+            },
+
+            announcements:{
+
+                abouthackafe: "За Hackafe",
+                announcement: "Обяви",
+                free: "Безплатни",
+                paid: "Платени",
+                description: "Описание",
+                contact: "Контакти"
             }
         };
 
@@ -93,6 +105,7 @@
                 home: 'Home',
                 member: 'Become Member',
                 events: 'Events',
+                announcements: 'Announcements',
                 contacts: 'Contacts',
                 logo: 'Hackafe Plovdiv'
             },
@@ -142,18 +155,30 @@
                 about:'<span class="highlight"><a href="#contacts">Hackafe</a></span> is an open group and everyone can become a part of it.',
                 contacts:'<a>Contact</a> us or come visit us <a href="#location">at.</a>',
                 type:"In Hackafe, there are 2 types of membership.",
-                reg:"You have non-stop acces to the facility of Hackafe.",
+                reg:"You have full time access to the facility of Hackafe.",
                 reg1:"You get a discount for every paid event that are held by #hackafe.",
-                reg2:"You get acces to all the resources in the lab.",
+                reg2:"You get access to all the resources in the lab.",
                 reg3:"Montlhy payment 10lv.",
                 pro:"Everything from REG + guaranteed room / desk in the lab where you can place a stationary computer.",
-                pro1:"Acces to PRO facility that can be used as an office.",
+                pro1:"Access to PRO facility that can be used as an office.",
                 pro2:" Monthly payment 75lv.",
                 members: "Every member has equal rights regardless of membership type.",
                 payment:"How to pay?",
                 bankaccount:"With a bank transfer to the account of Hackafe in ProCredit Bank.",
                 IBAN: "BG36PRCB92301045641219"
-            }
+            },
+        
+
+            announcements:{
+
+                abouthackafe: "Аbout Hackafe",
+                announcement: "Announcements",
+                free: "Free",
+                paid: "Paid",
+                description: "Description",
+                contact: "Contacts"
+            }   
+
         };
 
     }
