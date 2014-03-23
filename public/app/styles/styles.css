@@ -679,9 +679,6 @@ section#contacts ul.contactMembers li a.angeloff {
    Announcements style.
    ========================================================================== */
 
-
-
-
 #ann-navigation {
 	
 	padding: 0 0 45px 0 ;
@@ -704,25 +701,23 @@ section#contacts ul.contactMembers li a.angeloff {
 	line-height: 40px;
 	text-decoration: none;
 
-	
-
-	}
+}
 
 #ann-navigation a:hover {
 	
 	background: #4a96ea;
 	color: #FFF;
 	
-	
 }
 
 #ann-head-tittle {
-	padding-top: 60px;
-	padding-bottom: 10px;
-	font-size: 42px;
+	
+	padding-top: 40px;
+	padding-bottom: 30px;
+	font-size: 38px;
 	margin: 0 63px 45px 63px ;
 	font-family:roboto;
-	border-bottom: 4px solid #fff100;
+	border-bottom: 2px solid #fff100;
 
 }
 
@@ -731,10 +726,7 @@ section#contacts ul.contactMembers li a.angeloff {
 	display: block;
 	margin: 0 63px 45px 63px;
 
-
 }
-
-
 
 .ann-text {
 	
@@ -742,9 +734,12 @@ section#contacts ul.contactMembers li a.angeloff {
 	padding-left: 150px;
 	border-bottom: 1px solid #fff441;
 	padding-right: 10px;
-
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 10px;
 	
 }
+
 /*--------------------------------------------------------------*/
 /*--------------------------[ =footer ]-------------------------*/
 /*--------------------------------------------------------------*/
