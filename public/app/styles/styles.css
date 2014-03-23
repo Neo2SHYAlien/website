@@ -687,7 +687,7 @@ section#contacts ul.contactMembers li a.angeloff {
 	padding: 0 0 45px 0 ;
 	overflow: hidden;
 	text-align: center;
-	border-bottom: 1px solid #fff441 ;
+	
 }
 
 #ann-navigation a {
@@ -738,10 +738,11 @@ section#contacts ul.contactMembers li a.angeloff {
 
 .ann-text {
 	
-	background: url(../img/speaker.png)  no-repeat;
-	padding-left: 130px;
+	background: url(../img/speaker1.png)  no-repeat;
+	padding-left: 150px;
 	border-bottom: 1px solid #fff441;
 	padding-right: 10px;
+
 	
 }
 /*--------------------------------------------------------------*/
