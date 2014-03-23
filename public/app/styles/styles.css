@@ -575,7 +575,7 @@ section#contacts ul.contactMembers li span.phone {
 section#contacts ul.contactMembers li a.angeloff {
 	margin-left:10px;
 }
-
+text-align:right;
 
 /* ==========================================================================
    Events style.
@@ -655,9 +655,11 @@ section#contacts ul.contactMembers li a.angeloff {
 	line-height: 14px;
 	color: #666666;
 }
+
 .fb-link{
 	font-size: 	12px;
 }
+
 .article-background{
 	background: url(../img/article-background.png) 20px 30px no-repeat;
 	padding-left: 130px;
@@ -740,6 +742,12 @@ section#contacts ul.contactMembers li a.angeloff {
 	
 }
 
+.archive{
+	background: url(../img/article-background.png) 20px 30px no-repeat;
+	padding-left: 130px;
+	border-bottom: 1px solid #fff43e;
+	padding-top: 30px;
+}
 /*--------------------------------------------------------------*/
 /*--------------------------[ =footer ]-------------------------*/
 /*--------------------------------------------------------------*/
