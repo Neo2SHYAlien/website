@@ -21,8 +21,6 @@
 
             },
 
-
-
             homePage: {
                 title: '<span>Hackafe</span> PLOV<span>&lt;DIV&gt;</span>',
                 subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
@@ -210,6 +208,5 @@
             }
 
         };
-
     }
 );

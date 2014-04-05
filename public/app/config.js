@@ -22,9 +22,9 @@ require.config({
     // This is required to ensure Backbone works as expected within the AMD
     // environment.
     "backbone": {
+
       // These are the two hard dependencies that will be loaded first.
       deps: ["jquery", "underscore"],
-
       // This maps the global `Backbone` object to `require("backbone")`.
       exports: "Backbone"
     },
@@ -32,13 +32,12 @@ require.config({
     "UI": {
 
       deps:  ["jquery", "underscore", "I18n"],
-
       exports: "UI"
     },
 
     "translations": {
-      deps:  ["I18n"],
 
+      deps:  ["I18n"],
       exports: "translations"
     }
 
