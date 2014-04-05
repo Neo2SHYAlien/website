@@ -508,10 +508,6 @@ section#aboutHackafe header h2 span.white {
 /*--------------------------------------------------------------
 	contentContainer => contacts
 --------------------------------------------------------------*/
-#contacts {
-	padding:60px 0 100px 0;
-	background:#f9f9f9;
-}
 
 #contacts header {
 	padding:0 0 30px 0;
@@ -540,7 +536,8 @@ section#aboutHackafe header h2 span.white {
 #contacts {
 	max-width: 800px;
 	margin: 0 auto;
-	padding: 0 40px;
+	padding: 30px 0px;
+	background:#f9f9f9;
 }
 
 #contacts .contactMembers li {
@@ -575,13 +572,12 @@ section#contacts ul.contactMembers li span.phone {
 section#contacts ul.contactMembers li a.angeloff {
 	margin-left:10px;
 }
-text-align:right;
 
 /* ==========================================================================
    Events style.
    ========================================================================== */
 #events {
-	padding: 0 75px;
+	padding: 0 57px;
 }
 
 #events h1 {
