@@ -14,7 +14,8 @@ require.config({
     "modernizr": "scripts/vendor/modernizr",
     "I18n": "scripts/vendor/i18n",
     "translations": "translations/translations",
-    "UI": "../../ui"
+    "UI": "../../ui",
+    "plugins": "scripts/vendor/plugins"
   },
 
   shim: {
