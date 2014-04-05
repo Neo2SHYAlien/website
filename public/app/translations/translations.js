@@ -91,10 +91,11 @@
                 courses: "Курсове",
                 upcoming: "Предстоящи",
                 date: "Дата",
-                fblink: "FB Link"
-
-
-
+                fblink: "Линк към събитието",
+                from: "От",
+                to: "До",
+                nextPage: 'Следваща Страница',
+                prevPage: 'Предишна Страница'
             },
 
             announcements:{
@@ -161,23 +162,22 @@
                 common: 'Common',
                 announcement: 'Announcement',
                 system: 'Online system'
-            
+
             },
 
-           events:{ 
-            
-            eventscourses: "Events and Courses",
-            events: "Events",
-            courses: "Courses",
-            upcoming: "Upcoming Events",
-            date: "Date",
-            fblink: "FB Link"
+           events:{
 
-
-
-
-
-           }, 
+                eventscourses: "Events and Courses",
+                events: "Events",
+                courses: "Courses",
+                upcoming: "Upcoming Events",
+                date: "Date",
+                fblink: "Link to this event",
+                from: "From",
+                to: "To",
+                nextPage: 'Next Page',
+                prevPage: 'Previous Page'
+            },
 
             members:{
 
@@ -197,7 +197,7 @@
                 bankaccount:"With a bank transfer to the account of Hackafe in ProCredit Bank.",
                 IBAN: "BG36PRCB92301045641219"
             },
-        
+
 
             announcements:{
 
@@ -207,7 +207,7 @@
                 paid: "Paid",
                 description: "Description",
                 contact: "Contacts"
-            }   
+            }
 
         };
 

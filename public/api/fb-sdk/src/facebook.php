@@ -608,7 +608,7 @@ class Facebook
       $opts[CURLOPT_HTTPHEADER] = array('Expect:');
     }
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    $opts[CURLOPT_SSL_VERIFYPEER] = false; 
+    $opts[CURLOPT_SSL_VERIFYPEER] = false;
     curl_setopt_array($ch, $opts);
     $result = curl_exec($ch);
 

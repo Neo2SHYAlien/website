@@ -1,19 +1,3 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-xmlns:fb="http://www.facebook.com/2008/fbml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<title>Display Facebook Events to You Website</title>
-		<style type='text/css'>
-			/*adding some styles*/
-			.event{
-				background-color: #E3E3E3;
-				margin: 0 0 5px 0;
-				padding: 5px;
-			}
-		</style>
-	</head>
-<body>
 <?php
 //we have to set timezone to California
 date_default_timezone_set('Europe/Sofia');
@@ -52,24 +36,24 @@ $after = '';//get from url
 $before = '';//get from url
 
 
-$fqlDONOTTOUCH    =   "SELECT name, pic, start_time, end_time, location, description 
-			FROM event WHERE eid IN ( SELECT eid FROM event_member WHERE uid = $hackafeId ) 
+$fqlDONOTTOUCH    =   "SELECT name, pic, start_time, end_time, location, description
+			FROM event WHERE eid IN ( SELECT eid FROM event_member WHERE uid = $hackafeId )
 			ORDER BY start_time asc";
 
-$fql1    =   "SELECT name, pic, start_time, end_time, location, description 
+$fql1    =   "SELECT name, pic, start_time, end_time, location, description
 			FROM event WHERE eid = 260131784147356 AND start_time <=".  time()."
 			ORDER BY start_time asc";
 
-$fqlCources    =   "SELECT name, pic, start_time, end_time, location, description 
+$fqlCources    =   "SELECT name, pic, start_time, end_time, location, description
 			FROM event WHERE eid IN ( SELECT eid FROM event_member WHERE uid = $hackafeId ) AND end_time > ".  time()."
                             AND start_time < ".  time()."
 			ORDER BY start_time asc";
 
-$fql    =   "SELECT eid, name, description, pic_big, start_time, end_time, location 
-            FROM event 
-            WHERE eid IN (SELECT eid FROM event_member WHERE uid = $hackafeId) AND start_time < now() AND end_time > now() 
+$fql    =   "SELECT eid, name, description, pic_big, start_time, end_time, location
+            FROM event
+            WHERE eid IN (SELECT eid FROM event_member WHERE uid = $hackafeId) AND start_time < now() AND end_time > now()
             ORDER BY start_time";
-			
+
 
 $param  =   array(
 'method'    => 'fql.query',
@@ -82,6 +66,8 @@ if(isset($_REQUEST['url_string']))
 {
     $url = $_REQUEST['url_string'];
 }
+
+
 //$fqlResult   =   $facebook->api($param);
 //echo '<pre>';
 $eventsResult = $facebook->api($hackafeId . $url, 'GET', NULL);
@@ -106,56 +92,56 @@ $eventsResult = $facebook->api($hackafeId . $url, 'GET', NULL);
 //            echo "<img src={$value['picture']['data']['url']} />";
 //            echo '</div>';
 //                //echo "<div>Picture_url: " . $value['picture']['data']['url'] . "</div>";
-//        }else 
+//        }else
 //        {
 //            echo NULL;
-//        }       
+//        }
 //        if(isset($value['location']))
 //        {
 //            echo "<div>Location: " . $value['location'] . "</div>";
-//        }else 
+//        }else
 //        {
 //            echo NULL;
 //        }
-//        
+//
 //        if(isset($value['name']))
 //        {
 //            echo "<div>Name: " . $value['name'] . "</div>";
-//        }else 
+//        }else
 //        {
 //            echo NULL;
 //        }
-//        
+//
 //        if(isset($value['start_time']))
 //        {
 //             echo "<div>Start Time: " . $value['start_time'] . "</div>";
-//        }else 
+//        }else
 //        {
 //            echo NULL;
 //        }
-//        
+//
 //        if(isset($value['end_time']))
 //        {
 //            echo "<div>End Time: " . $value['end_time'] . "</div>";
 //
-//        }else 
+//        }else
 //        {
 //            echo NULL;
 //        }
-//        
+//
 //        if(isset($value['description']))
 //        {
 //            echo "<div>More Info: " . $value['description'] . "</div>";
 //
-//        }else 
+//        }else
 //        {
 //            echo NULL;
 //        }
 //        echo "<div style='clear: both'></div>";
 //        echo '</div>';
-//           
+//
 //    //}
-//        
+//
 //}
 //$before = $eventsResult['paging']['cursors']['before'];
 //$after = $eventsResult['paging']['cursors']['after'];
@@ -211,23 +197,3 @@ echo $result
 //}
 
 ?>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
-</script>
-<script type='text/javascript'>
-//just to add some hover effects
-$(document).ready(function(){
-
-$('.event').hover(
-	function () {
-		$(this).css('background-color', '#CFF');
-	}, 
-	function () {
-		$(this).css('background-color', '#E3E3E3');
-	}
-);
-
-});
-</script>
-</body>
-</html>

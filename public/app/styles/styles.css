@@ -603,10 +603,10 @@ text-align:right;
 	display: block;
 	width: 49.5%;
 	float: left;
-	
+
 	border-top: 1px solid #7e7e7e;
 	background: #ecebe8;
-	
+
 	color: #000;
 	font-size: 16px;
 	line-height: 40px;
@@ -661,8 +661,9 @@ text-align:right;
 }
 
 .article-background{
-	background: url(../img/article-background.png) 20px 30px no-repeat;
-	padding-left: 130px;
+	/*background: url(../img/article-background.png) 20px 30px no-repeat;
+	padding-left: 130px;*/
+	padding-left: 20px;
 	border-bottom: 1px solid #fff43e;
 	padding-top: 30px;
 }
@@ -671,26 +672,32 @@ text-align:right;
 }
 
 .pagination  {
-	
+
 	border-top: 1px solid #e7e7e7;
 	color: #000;
 	font-size: 16px;
 	line-height: 40px;
 }
+
+.event-thumb {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
 /* ==========================================================================
    Announcements style.
    ========================================================================== */
 
 #ann-navigation {
-	
+
 	padding: 0 0 45px 0 ;
 	overflow: hidden;
 	text-align: center;
-	
+
 }
 
 #ann-navigation a {
-	
+
 	font-family:roboto;
 	text-decoration: none;
 	width: 49.5%;
@@ -706,14 +713,14 @@ text-align:right;
 }
 
 #ann-navigation a:hover {
-	
+
 	background: #4a96ea;
 	color: #FFF;
-	
+
 }
 
 #ann-head-tittle {
-	
+
 	padding-top: 40px;
 	padding-bottom: 30px;
 	font-size: 38px;
@@ -724,14 +731,14 @@ text-align:right;
 }
 
 #ann-content {
-	
+
 	display: block;
 	margin: 0 63px 45px 63px;
 
 }
 
 .ann-text {
-	
+
 	background: url(../img/speaker1.png)  no-repeat;
 	padding-left: 150px;
 	border-bottom: 1px solid #fff441;
@@ -739,7 +746,7 @@ text-align:right;
 	font-size: 14px;
 	line-height: 16px;
 	margin-bottom: 10px;
-	
+
 }
 
 .archive{
@@ -753,28 +760,26 @@ text-align:right;
 /*--------------------------------------------------------------*/
 
 #push {
-	height: 180px;
-	clear:both;
+	clear: both;
 }
 
 footer {
-	height: 180px;
+
 	margin: 0 auto;
 }
 
 footer .footerContent {
-	width:1060px;
-	margin:0 auto;
+	margin: 0 auto;
 }
 
 footer h2 {
-	float:left;
+	float: left;
 }
 
 footer ul {
-	width:360px;
-	float:right;
-	padding:26px 0 0 0;
+
+	float: right;
+	padding: 26px 26px 0 0;
 }
 
 footer ul li {
@@ -910,6 +915,15 @@ footer ul li a img {
 
 .clearfix {
     *zoom: 1;
+}
+
+.pull-right,
+.inner-navigation a.load-next-page {
+	float: right;
+}
+.pull-left,
+.inner-navigation a.load-prev-page {
+	float: left;
 }
 /* ==========================================================================
    Print styles

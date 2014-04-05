@@ -1,109 +1,103 @@
+<%
+
+    var view = this,
+        eventsList = this.eventsCollection.where({"isCourse": false}),
+        courseList = this.eventsCollection.where({"isCourse": true}),
+        nextPage = this.nextEventsUrlParam,
+        prevPage = this.previousEventsUrlParam,
+        selectedTab = this.selectedSection;
+
+
+        console.log([prevPage, nextPage]);
+ %>
 <div id="events" class="main-container">
 
     <section class="events">
-        
+
         <header>
             <h1><%= I18n.t('events.eventscourses') %></h1>
         </header>
 
         <nav id="events-menu" class="inner-navigation size-2">
-            <a href="javascript:;" data-target="upcoming" class="show-content active"><%= I18n.t('events.events') %></a>
-            <a href="javascript:;" data-target="courses" class="show-content"><%= I18n.t('events.courses') %></a>
+            <a href="javascript:;" data-target="upcoming" class="show-content
+                <% if(selectedTab == 0) { %>active<% } %>"><%= I18n.t('events.events') %></a>
+            <a href="javascript:;" data-target="courses" class="show-content
+                <% if(selectedTab == 1) { %>active<% } %>"><%= I18n.t('events.courses') %></a>
         </nav>
 
-        <div id="upcoming" class="section visible">
+        <div id="upcoming" class="section <% if(selectedTab == 0) { %>visible<% } %>">
             <h2><%= I18n.t('events.upcoming') %></h2>
-                <article class="event article-background">
-                    <h3>Super qko subitie v Hackafe |ASDasdasdasd</h3>
-                    <p class="date"> 22.09.2014 
-                        <%= I18n.t('events.date') %>
-                    </p>
-                    <p>
-                        Описание:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ut, quaerat, iste incidunt est natus deleniti inventore facilis quis corporis a aperiam error reiciendis veniam perspiciatis eaque dolores debitis ex!
-                    </p>
-                    <p class="fb-link">
-                        линк към FB: <a href="">link kum subitieto</a>
-                    </p>
-                </article>
-               
-                <article class="event article-background">
-                    <h3>Super qko subitie v Hackafe |ASDasdasdasd</h3>
-                    <p class="date">
-                        <%= I18n.t('events.date') %> 22.09.2014  Местоположение: Hackafe Plovdiv
-                    </p>
-                    <p>
-                        Описание:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ut, quaerat, iste incidunt est natus deleniti inventore facilis quis corporis a aperiam error reiciendis veniam perspiciatis eaque dolores debitis ex!
-                    </p>
-                    <p class="fb-link">
-                        линк към FB: <a href="">link kum subitieto</a>
-                    </p>
-                </article>
-               
-            
+
+                <% _.each(eventsList, function(event) { %>
+
+                    <% var eventDate = new Date(event.get('start_time')) %>
+
+                    <article class="event article-background">
+                        <% if (event.get('picture')) { %>
+                            <img src="<%= (event.get('picture')).data.url %>" class="event-thumb">
+                        <% } %>
+                        <h3><%= event.get('name') %></h3>
+                        <p class="date">
+                            <%= I18n.t('events.date') %>
+                            <%= eventDate.toLocaleDateString() %>
+                        </p>
+
+                        <p>
+                            <%= event.get('description').replace(new RegExp('\r?\n','g'), '<br />') %>
+                        </p>
+                        <p class="fb-link">
+                            <%= I18n.t('events.fblink') %>: <a href="//facebook.com/events/<%= event.get('id') %>" target="_blank"><%= event.get('name') %></a>
+                        </p>
+                    </article>
+
+                <% }); %>
+
         </div>
 
-        <div id="courses" class="section">
-            <h2>Курсове</h2>
+        <div id="courses" class="section <% if(selectedTab == 1) { %>visible<% } %>">
+            <h2><%= I18n.t('events.courses') %></h2>
 
-                <article class="event article-background">
-                    <h3>Kurs v hakafe</h3>
-                    <p class="date">
-                        Дата: 22.09.2014  Местоположение: Hackafe Plovdiv
-                    </p>
-                    <p>
-                        Kurs v hackafe
-                        za html i javascript.
-                    </p>
-                    <p class="fb-link">
-                        линк към FB: <a href="">link kum subitieto</a>
-                    </p>
-                </article>
-               
-                <article class="event article-background">
-                    <h3>Kurs po Bichene na ailqk v hackafe :D</h3>
-                    <p class="date">
-                        Дата: 22.09.2014  Местоположение: Hackafe Plovdiv
-                    </p>
-                    <p>
-                        Kurs za vsichki koito ne znaqt kak da bichat ailqk :D
-                        kursa e za nachinaeshti naprednali i ailqkchii :D
-                    </p>
-                    <p class="fb-link">
-                        линк към FB: <a href="">link kum subitieto</a>
-                    </p>
-                </article>
-               
+                <% _.each(courseList, function(course) { %>
+
+                    <% var courseStartDate = new Date(course.get('start_time'));
+                       var courseEndDate = new Date(course.get('end_time')) %>
+
+                    <article class="event article-background">
+                        <% if (course.get('picture')) { %>
+                            <img src="<%= (course.get('picture')).data.url %>" class="event-thumb">
+                        <% } %>
+                        <h3><%= course.get('name') %></h3>
+                        <p class="date">
+                            <%= I18n.t('events.date') %>
+                            <%= I18n.t('events.from') %>
+                            <%= courseStartDate.toLocaleDateString() %>
+                            <%= I18n.t('events.to') %>
+                            <%= courseEndDate.toLocaleDateString() %>
+                        </p>
+                        <p>
+                            <%= course.get('description').replace(new RegExp('\r?\n','g'), '<br />') %>
+                        </p>
+                        <p class="fb-link">
+                            <%= I18n.t('events.fblink') %>: <a href="//facebook.com/events/<%= course.get('id') %>" target="_blank"><%= course.get('name') %></a>
+                        </p>
+                    </article>
+
+                <% }); %>
 
         </div><!-- end of .courses -->
-        <div id="archive" class="pagination">
-            <h2>Архив на всички събития</h2>
-                <article class="event archive">
-                    <h3>Kurs na hackafe (arhiv)</h3>
-                    <p class="date">
-                        Дата: 20.01.2014  Местоположение: Hackafe Plovdiv
-                    </p>
-                    <p>
-                        Kurs v hackafe
-                        it orientirane
-                    </p>
-                    <p class="fb-link">
-                        линк към FB: <a href="">link kum subitieto</a>
-                    </p>
-                </article>
-                <article class="event archive">
-                    <h3>Kurs na hackafe (arhiv)</h3>
-                    <p class="date">
-                        Дата: 20.01.2014  Местоположение: Hackafe Plovdiv
-                    </p>
-                    <p>
-                        Kurs v hackafe
-                        it orientirane
-                    </p>
-                    <p class="fb-link">
-                        линк към FB: <a href="">link kum subitieto</a>
-                    </p>
-                </article>
+
+        <div class="pagination inner-navigation size-2">
+
+            <% if(prevPage) { %>
+                <a href="javascript:;"  class="load-prev-page" title="<%= I18n.t('events.prevPage') %>"><%= I18n.t('events.prevPage') %></a>
+            <% } %>
+
+
+            <% if(nextPage) { %>
+                <a href="javascript:;" class="load-next-page" title="<%= I18n.t('events.nextPage') %>"><%= I18n.t('events.nextPage') %></a>
+            <% } %>
         </div><!-- end of .archive -->
+
     </section>
     <!-- end of section .events -->
 
