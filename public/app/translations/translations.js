@@ -1,4 +1,4 @@
-﻿define(['I18n'],
+define(['I18n'],
     function(I18n) {
         "use strict";
 
@@ -28,7 +28,7 @@
                 Hackafe: '<span class="highlight">Hackafe Plovdiv</span>',
 
                 WhoWeAre: '<p>Ние сме млади, предприемчиви, образовани и инициативни. Ние създаваме новите технологии и бъдещето. Ние променяме света.</p>',
-                HackafePlace: '<p>Hackafe Plovdiv е <a href="#location">мястото</a>, на което обменяме и споделяме идеи, получаваме нови знания, правим нови контакти.</p>',
+                HackafePlace: '<p>Hackafe Plovdiv е <a href="#!/contacts">мястото</a>, на което обменяме и споделяме идеи, получаваме нови знания, правим нови контакти.</p>',
                 organize: '<p>Организираме курсове, срещи, лекции и конференции в Пловдив:</p>',
 
                 topics: 'Актуални теми от уеб технологиите, дизайна и програмирането.',
@@ -50,7 +50,7 @@
                 street: 'G Street View',
                 contacts: 'Контакти',
                 org: 'Сдружение с нестопанска цел "Хакафе"',
-                loc: 'пл. "Гроздов Пазар" №2, 4000 Пловдив, България',
+                loc: 'ул. 11-ти Август №1, 4000 Пловдив, България',
                 chief: 'Вожд',
                 events: 'Събития',
                 finance: 'Финанси',
@@ -64,15 +64,15 @@
             members:{
 
                 membership: '<span class="block">Как да стана член<span>?</span>',
-                about:'<span class="highlight"><a href="#contacts">Hackafe</a></span> е отворено общество и всеки може да стане негов член.',
-                contacts: '<a href="javascript:;">Свържете</a> се с нас или елате на <a href="#location">място.</a>',
+                about:'<span class="highlight"><a href="#!/contacts">Hackafe</a></span> е отворено общество и всеки може да стане негов член.',
+                contacts: '<a href="#!/contacts">Свържете</a> се с нас или елате на <a href="#!/contacts">място.</a>',
                 type:"В Hackafe имaме установени 2 типа членство.",
                 reg:"Възможност за 24/7 достъп до помещенията на hackafe в самия център на Пловдив.",
                 reg1:"Отстъпка за всички платени събития, които се провеждат в рамките на #hackafe.",
                 reg2:"Достъп до всички ресурси на лаба.",
                 reg3:"Месечен членски внос 10 лв.",
-                pro:"Всичко от REG + гарантирано място / бюро в лаба, на което може да се остави стационарен компютър.",
-                pro1:"Достъп до PRO помещение, което може да се ползва като офис.",
+                pro:"Всичко от Reg + гарантирано място / бюро в лаба, на което може да се остави стационарен компютър.",
+                pro1:"Достъп до Coworking помещение, което може да се ползва като офис.",
                 pro2:"Месечен членски внос 75 лв.",
                 members: "Всички членове имат равни права в независимо от нивото на членство.",
                 payment:"Как да платим?",
@@ -129,7 +129,7 @@
                 aboutTitle: '<span class="white">What is</span><span class="black">hackafe</span>',
                 Hackafe: '<span class="highlight">Hackafe Plovdiv</span>',
                 WhoWeAre: 'We are young, nterprising, educated and proactive. We create new technology and the future. We change the world.',
-                HackafePlace: 'Hackafe Plovdiv is <a href="#location"> place </a>, where we exchange and share ideas, get new skills, make new contacts.',
+                HackafePlace: 'Hackafe Plovdiv is <a href="#!/contacts"> place </a>, where we exchange and share ideas, get new skills, make new contacts.',
                 organize: 'We organize courses, meetings, lectures and conferences in Plovdiv:',
 
                 topics: 'Current topics of web technology, design and programming.',
@@ -151,8 +151,8 @@
                 map: 'Map',
                 street: 'G Street View',
                 contacts: 'Contacts',
-                org: 'Non-profit organization "Hakafe"',
-                loc: '"Grozdov Pazar" №2, 4000 Plovdiv, Bulgaria',
+                org: 'Non-profit organization "Hackafe"',
+                loc: ' 11ti August №1, 4000 Plovdiv, Bulgaria',
                 chief: 'Chief',
                 events: 'Events',
                 finance: 'Finance',
@@ -180,15 +180,15 @@
             members:{
 
                 membership:"How to become a member?",
-                about:'<span class="highlight"><a href="#contacts">Hackafe</a></span> is an open group and everyone can become a part of it.',
-                contacts:'<a>Contact</a> us or come visit us <a href="#location">at.</a>',
+                about:'<span class="highlight"><a href="#!/contacts">Hackafe</a></span> is an open group and everyone can become a part of it.',
+                contacts:'<a>Contact</a> us or come visit us <a href="#!/contacts">at.</a>',
                 type:"In Hackafe, there are 2 types of membership.",
                 reg:"You have full time access to the facility of Hackafe.",
                 reg1:"You get a discount for every paid event that are held by #hackafe.",
                 reg2:"You get access to all the resources in the lab.",
                 reg3:"Montlhy payment 10lv.",
-                pro:"Everything from REG + guaranteed room / desk in the lab where you can place a stationary computer.",
-                pro1:"Access to PRO facility that can be used as an office.",
+                pro:"Everything from Reg + guaranteed room / desk in the lab where you can place a stationary computer.",
+                pro1:"Access to Coworking facility that can be used as an office.",
                 pro2:" Monthly payment 75lv.",
                 members: "Every member has equal rights regardless of membership type.",
                 payment:"How to pay?",
