@@ -16,6 +16,7 @@ define(['I18n'],
                 member: 'Стани член',
                 events: 'Събития',
                 announcements: 'Обяви',
+                sponsors: 'Спонсори',
                 contacts: 'Контакти',
                 logo: 'Hackafe Plovdiv'
 
@@ -24,7 +25,7 @@ define(['I18n'],
             homePage: {
                 title: '<span>Hackafe</span> PLOV<span>&lt;DIV&gt;</span>',
                 subtitle: '<span class="top">co-workers &amp;</span> <span class="bottom">hacker space</span>',
-                aboutTitle: '<span class="white">Какво е</span><span class="black">hackafe</span>',
+                aboutTitle: '<span class="white">Какво е </span><span class="black">hackafe</span>',
                 Hackafe: '<span class="highlight">Hackafe Plovdiv</span>',
 
                 WhoWeAre: '<p>Ние сме млади, предприемчиви, образовани и инициативни. Ние създаваме новите технологии и бъдещето. Ние променяме света.</p>',
@@ -96,6 +97,13 @@ define(['I18n'],
                 prevPage: 'Предишна Страница'
             },
 
+            sponsors: {
+                title: "Списък на нашите спонсори",
+                how_to_title: "Как да станете спонсор и с какво да помогнете",
+                how_to_become: "Свържете се с Вожда на Hackafe от страницата с контакти. Можете да дарите нещо от което да имаме полза (има списък на края на страницата) или нещо от което Вие смятате, че ще имаме полза.<br>Примерно: можете да издадете промо кодове за намаление на дадени услуги за членовете на Hackafe.",
+                list_of_stuff: '<ul><li>Интернет: оптичен, за да можем да прави live streaming на събития, лекции и workshop-и</li><li>Професионална камера за заснемане: - Примерно CANON LEGRIA HF M52 или CANON LEGRIA HF G10</li><li>Live broadcast устройство - <a href="http://new.livestream.com/broadcaster">livestream broadcaster</a> и лиценз за акаунт към него</li><li>3d printer за изработка на детайли към различни проекти или материали за конструиране на собствен 3d printer</li><li>Шкафове, рафтове, мека мебел и подобни (чакаме дарение, в прогрес)</li><li>Спонсори за работилници изискващи закупуване на определн брой хардуерни материали.</li><li>Телевизор (по-голям от 32 инча) за презентации, реклами и streaming</li><li>Акаунт в <a href="http://tutsplus.com/">http://tutsplus.com/</a> за членовете на Hackafe</li><li>Барбарони за релакс/работен кът</li></ul>'
+            },
+
             announcements:{
 
                 abouthackafe: "За Hackafe",
@@ -119,6 +127,7 @@ define(['I18n'],
                 member: 'Become Member',
                 events: 'Events',
                 announcements: 'Announcements',
+                sponsors: 'Sponsors',
                 contacts: 'Contacts',
                 logo: 'Hackafe Plovdiv'
             },
@@ -175,6 +184,13 @@ define(['I18n'],
                 to: "To",
                 nextPage: 'Next Page',
                 prevPage: 'Previous Page'
+            },
+
+            sponsors: {
+                title: "List of our sponsors",
+                how_to_title: "How to become sponsor",
+                how_to_become: "Contact the leader of Hackafe from the contacts page. You can gift us something from the list below or give us something you think will be usefull to our hackerspace.<br>For example: you can give us promocodes for services usefull to Hackafe's members.",
+                list_of_stuff: '<ul><li>Internet: optic internet connection, so we can live streaming events, lectures, courses and workshops</li><li>Professional camera for recording: - CANON LEGRIA HF M52 или CANON LEGRIA HF G10</li><li>Live broadcast device like - <a href="http://new.livestream.com/broadcaster">livestream broadcaster</a> and a licens to use it</li><li>3d printer for roducing materials for projects or the materials to build our own 3d printer</li><li>Cabinets, shelves, sofas, etc. (in progress)</li><li>Sponsor workshops that need buying parts and hardware devices.</li><li>TV (larger than 32 inch) for presentations, ads and streaming</li><li>Account for <a href="http://tutsplus.com/">http://tutsplus.com/</a> for the members of Hackafe</li><li>Beanbag for relax/work space</li></ul>'
             },
 
             members:{

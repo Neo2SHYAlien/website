@@ -576,11 +576,12 @@ section#contacts ul.contactMembers li a.angeloff {
 /* ==========================================================================
    Events style.
    ========================================================================== */
-#events {
+#events,
+#sponsors {
 	padding: 0 57px;
 }
 
-#events h1 {
+.page-title {
 	padding: 30px 0 20px 0;
 	border-bottom: 2px solid #fff43e;
 	font-size: 38px;
@@ -681,15 +682,28 @@ section#contacts ul.contactMembers li a.angeloff {
 }
 
 /* ==========================================================================
+   Sponsors styles.
+   ========================================================================== */
+.sponsor-content:last-child {
+	margin-bottom: 50px;
+}
+.sponsor-content > a {
+	display: inline-block;
+	margin: 0 20px 20px 0;
+}
+
+.sponsor-content > ul li {
+	padding: 0 0 0 30px;
+	background: url(../img/bg-ul-li.png) left 15px no-repeat;
+}
+/* ==========================================================================
    Announcements style.
    ========================================================================== */
 
 #ann-navigation {
-
 	padding: 0 0 45px 0 ;
 	overflow: hidden;
 	text-align: center;
-
 }
 
 #ann-navigation a {

@@ -217,6 +217,46 @@ define([
 
         },
 
+        sponsors: function() {
+            var router = this;
+
+
+            //updateHeader
+            if(router.views.headerView) {
+                router.views.headerView.render();
+            }else {
+                router.views.headerView = new HeaderView();
+            }
+
+            //updatePage content
+            if(router.views.sponsorsView) {
+
+                router.views.sponsorsView.render();
+
+            }else {
+
+                router.views.sponsorsView = new SponsorsView();
+            }
+
+
+            //bind language update
+            //To DO: refactor language update mechanism
+            window.eventDispacher.off('language:update', router.views.sponsorsView.render);
+            window.eventDispacher.on('language:update', router.views.sponsorsView.render, router.views.sponsorsView);
+
+            //Turn off all event events
+            router.on('all', function (eventName) {
+
+                if(eventName && eventName.indexOf('route:') === 0 && eventName !== 'route:sponsors') {
+                    this.off(null, arguments.callee);
+
+                    window.eventDispacher.off('language:update', router.views.sponsorsView.render);
+                }
+
+            });
+
+        },
+
         contacts: function() {
             var router = this;
 
