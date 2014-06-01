@@ -17,8 +17,9 @@ define([
   'models/EventsCollection',
   'models/ProjectsCollection',
   'models/SponsorsCollection',
+  'models/FutureEventsCollection',
   ],
-  function($, _, Backbone, I18n, translations, HeaderView, FooterView, IndexView, EventsView, ProjectView,MembersView, SponsorsView, ContactsView, AnnouncementsView, EventsCollection, ProjectsCollection, SponsorsCollection) {
+  function($, _, Backbone, I18n, translations, HeaderView, FooterView, IndexView, EventsView, ProjectView,MembersView, SponsorsView, ContactsView, AnnouncementsView, EventsCollection, ProjectsCollection, SponsorsCollection, FutureEventsCollection) {
     // "use strict";
 
     var AppRouter = Backbone.Router.extend({

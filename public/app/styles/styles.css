@@ -596,9 +596,9 @@ section#contacts ul.contactMembers li a.angeloff {
 	text-align: center;
 }
 
-.inner-navigation.size-2 a {
+.inner-navigation.size-2 a,
+.inner-navigation.size-3 a {
 	display: block;
-	width: 49.5%;
 	float: left;
 
 	border-top: 1px solid #7e7e7e;
@@ -609,8 +609,22 @@ section#contacts ul.contactMembers li a.angeloff {
 	line-height: 40px;
 	text-decoration: none;
 }
+.inner-navigation.size-2 a {
+	width: 49.5%;
+}
 
-.inner-navigation.size-2 a:hover, .inner-navigation.size-2 a.active {
+.inner-navigation.size-3 a {
+	width: 32.5%;
+	margin-right: 0.5%
+}
+
+.inner-navigation.size-3 a:last-child {
+	margin-right: 0;
+	width: 33%;
+}
+
+.inner-navigation.size-2 a:hover, .inner-navigation.size-2 a.active,
+.inner-navigation.size-3 a:hover, .inner-navigation.size-3 a.active {
 	background: #4a96ea;
 	color: #FFF;
 }
