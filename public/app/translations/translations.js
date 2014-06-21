@@ -58,8 +58,9 @@ define(['I18n'],
                 manager: 'Офис мениджър',
                 common: 'Общ',
                 announcement: 'Известия',
-                system: 'Онлайн система'
-
+                system: 'Онлайн системи',
+		bigLabName: 'Големият Лаб',
+		littleLabName: 'Малкият Лаб'
             },
 
             members:{
@@ -73,7 +74,7 @@ define(['I18n'],
                 reg2:"Достъп до всички ресурси на лаба.",
                 reg3:"Месечен членски внос 10 лв.",
                 pro:"Всичко от Reg + гарантирано място / бюро в лаба, на което може да се остави стационарен компютър.",
-                pro1:"Достъп до Coworking помещение, което може да се ползва като офис.",
+                pro1:"Достъп до CoW помещение, което може да се ползва като офис.",
                 pro2:"Месечен членски внос 75 лв.",
                 members: "Всички членове имат равни права в независимо от нивото на членство.",
                 payment:"Как да платим?",
@@ -173,6 +174,8 @@ define(['I18n'],
                 common: 'Common',
                 announcement: 'Announcement',
                 system: 'Online system'
+		bigLabName: 'Big Lab',
+		littleLabName: 'Little Lab'
 
             },
 
@@ -212,7 +215,7 @@ define(['I18n'],
                 reg2:"You get access to all the resources in the lab.",
                 reg3:"Montlhy payment 10lv.",
                 pro:"Everything from Reg + guaranteed room / desk in the lab where you can place a stationary computer.",
-                pro1:"Access to Coworking facility that can be used as an office.",
+                pro1:"Access to CoW facility that can be used as an office.",
                 pro2:" Monthly payment 75lv.",
                 members: "Every member has equal rights regardless of membership type.",
                 payment:"How to pay?",
