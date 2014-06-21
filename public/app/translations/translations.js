@@ -173,7 +173,7 @@ define(['I18n'],
                 manager: 'Office manager',
                 common: 'Common',
                 announcement: 'Announcement',
-                system: 'Online system'
+                system: 'Online system',
 		bigLabName: 'Big Lab',
 		littleLabName: 'Little Lab'
 
