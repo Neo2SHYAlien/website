@@ -17,7 +17,7 @@ define([
   'models/EventsCollection',
   'models/ProjectsCollection',
   'models/SponsorsCollection',
-  'models/FutureEventsCollection',
+  'models/FutureEventsCollection'
   ],
   function($, _, Backbone, I18n, translations, HeaderView, FooterView, IndexView, EventsView, ProjectView,MembersView, SponsorsView, ContactsView, AnnouncementsView, EventsCollection, ProjectsCollection, SponsorsCollection, FutureEventsCollection) {
     // "use strict";
@@ -48,8 +48,6 @@ define([
         initialize: function() {
 
             var router = this;
-
-            //TO DO: create Who is in the lab widget
 
             //used for debug
             router.on('all', function (eventName) {

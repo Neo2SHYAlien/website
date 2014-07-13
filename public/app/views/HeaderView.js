@@ -2,8 +2,9 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'text!templates/headerTemplate.html'
-], function($, _, Backbone, headerTemplate){
+  'text!templates/headerTemplate.html',
+  'views/WhoIsInTheLabView'
+], function($, _, Backbone, headerTemplate, WhoIsInTheLabView){
     "use strict";
 
     var HeaderView = Backbone.View.extend({
@@ -16,7 +17,9 @@ define([
             var view = this;
 
             window.eventDispacher.on('language:update', view.render, view);
-
+            
+            view.whoIsInTheLab = new WhoIsInTheLabView();
+            
             view.render();
         },
 
@@ -26,6 +29,9 @@ define([
             var compiledTemplate = _.template(headerTemplate).call(this);
 
             view.$el.html(compiledTemplate);
+            
+            view.whoIsInTheLab.render();
+            
             view.languageSelectors = view.$el.find('#js-change-language a');
 
             this.bind();
