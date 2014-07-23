@@ -14,16 +14,17 @@ require.config({
     "modernizr": "scripts/vendor/modernizr",
     "I18n": "scripts/vendor/i18n",
     "translations": "translations/translations",
-    "UI": "../../ui"
+    "UI": "../../ui",
+    "plugins": "scripts/vendor/plugins"
   },
 
   shim: {
     // This is required to ensure Backbone works as expected within the AMD
     // environment.
     "backbone": {
+
       // These are the two hard dependencies that will be loaded first.
       deps: ["jquery", "underscore"],
-
       // This maps the global `Backbone` object to `require("backbone")`.
       exports: "Backbone"
     },
@@ -31,13 +32,12 @@ require.config({
     "UI": {
 
       deps:  ["jquery", "underscore", "I18n"],
-
       exports: "UI"
     },
 
     "translations": {
-      deps:  ["I18n"],
 
+      deps:  ["I18n"],
       exports: "translations"
     }
 

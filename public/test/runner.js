@@ -19,7 +19,7 @@
   // Set the application endpoint and load the configuration.
   require.config({
     paths: {
-      underscore: "../vendor/bower/lodash/dist/lodash.underscore"
+      underscore: "../../app/scripts/vendor/lodash.underscore"
     },
 
     baseUrl: "base/app"

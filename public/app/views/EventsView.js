@@ -3,8 +3,9 @@ define([
   'underscore',
   'backbone',
   'models/EventsCollection',
+  'models/FutureEventsCollection',
   'text!templates/eventsTemplate.html'
-], function($, _, Backbone, EventsCollection, eventsTemplate){
+], function($, _, Backbone, EventsCollection, FutureEventsCollection, eventsTemplate){
 
 
     var EventsView = Backbone.View.extend({
@@ -22,10 +23,18 @@ define([
         initialize: function(options) {
             var view = this;
 
+            view.futureEventsCollection = new FutureEventsCollection();
             view.eventsCollection = new EventsCollection();
 
+            //Dev note: For some reason $.when with the 2 deferred obejct dosn't works correctly
+            view.eventsCollection.deferred.done(function() {
+                view.futureEventsCollection.deferred.done(function() {
+                    view.render();
+                });
+            });
+
             window.eventDispacher.on('events:render', function() {
-                console.log('render events');
+                console.log('events:render - render events');
                 view.render();
             });
 
@@ -39,7 +48,7 @@ define([
         render: function(options) {
             var view = this;
 
-            console.log(['render Events', options]);
+            console.log(['render: render Events', view.eventsCollection.deferred.state()]);
 
             var compiledTemplate = _.template(eventsTemplate).call(this);
             view.$el.html(compiledTemplate);

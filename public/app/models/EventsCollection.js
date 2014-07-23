@@ -10,12 +10,14 @@ define([
 
         initialize : function(models, options) {
             var collection = this;
+            collection.deferred = $.Deferred();
 
             $.get(collection.url, function(rawData) {
 
                 rawData = JSON.parse(rawData);
-                console.log(rawData);
+                // console.log(rawData);
                 collection.parseRawData(rawData);
+                collection.deferred.resolve();
             });
 
         },
@@ -32,6 +34,7 @@ define([
                 rawData = JSON.parse(rawData);
 
                 collection.parseRawData(rawData);
+                window.eventDispacher.trigger('events:render');
             });
         },
 
@@ -72,8 +75,6 @@ define([
                 previousEventsUrlParam: previousEventsUrlParam
             });
 
-
-            window.eventDispacher.trigger('events:render');
         }
 
     });

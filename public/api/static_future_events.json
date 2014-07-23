@@ -1,0 +1,51 @@
+[
+    {
+        "id": "6",
+        "title": "Клъстеризация и Класификация",
+        "presenter": "Екатерина Михайлова",
+        "description": "",
+        "image": "no_image.jpg"
+    },
+    {
+        "id": "5",
+        "title": "какво е Dependency Injection?",
+        "presenter": "Лъчезар Лечев",
+        "description": "<p>Малка лекция( 30-тина минути ) за Dependency Injection и Di Container-ите<br>Въвеждаща лекцийка като се засягат:</p><ul><li>IoC - Inversion of Control - терминологично</li><li> Какво е компонент(Component) и какво е Услуга(Service) - само терминологично</li><li>Di и кога ще ни потрябва</li><li>Видове Di - Constructor, Setter (на Interface няма да се спирам)</li></ul><p>Гласувайте за това събитие тук: <a href=\"http://forum.hackafe.org/index.php?topic=300.0\" target=\"_blank\">какво е Dependency Injection?</a></p>",
+        "image": "no_image.jpg"
+    },
+    {
+        "id": "4",
+        "title": "Курс по Математика и JavaScript",
+        "presenter": "Васил Марчев",
+        "description": "<p>Курсът ще обхване материя от Геометрията като се фокусираме върху математика от 8-12 клас + малка част от аналитичната геометрия.Практическите примери ще бъдат на canvas и или в комбинация с други HTML5 елементи.<br>Гласувайте за това събитие тук: <a href=\"http://forum.hackafe.org/index.php?topic=295.0\" target=\"_blank\">Курс по Математика и JavaScript</a></p>",
+        "image": "mathematics.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Лекция за Greensock",
+        "presenter": "Атанас Ружин",
+        "description": "<p>Лекцията ще изисква базови познания по JavaScript. Ще бъдат разгледани различни видове анимации с библиотеките TweenLite и TweenMax както и насоки къде и при какви условия да ги ползвате.<br>Гласувайте за това събитие тук: <a href=\"http://forum.hackafe.org/index.php?topic=294.0\" target=\"_blank\">Лекция за Greensock</a></p>",
+        "image": "greensock.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Workshop по Web Performance and Optimizations",
+        "presenter": "Самуил Господинов",
+        "description": "<p>Workshop-a ще е с продължителнйост от 6-10 учебни часа и ще е разделен на няколко занятия..<br>Гласувайте за това събитие тук: <a href=\"http://forum.hackafe.org/index.php?topic=296.0\" target=\"_blank\">Web Performance and Optimizations</a></p>",
+        "image": "web_performance.jpg"
+    },
+    {
+        "id": "1",
+        "title": "Иска те ли да се научите как да сглобите собствен куад коптер?",
+        "presenter": "Самуил Господинов",
+        "description": "<p>Работилницата ще ни даде основни познания по строене на мулти коптери, от какви части се изграждат, малко аеродинамика и накрая сглобяване на мини куад коптер.<br>Работлницата исиква финансиране.<br>Гласувайте за това събитие тук: <a href=\"http://forum.hackafe.org/index.php?topic=297.0\" target=\"_blank\">Kак да сглобите собствен куад коптер</a></p>",
+        "image": "quad.jpg"
+    },
+    {
+        "id": "0",
+        "title": "Има ли желаещи да се направи една прилична лекция или курс за Networking?",
+        "presenter": "Петко Ангелов",
+        "description": "<p>Ще бъдат включени следните теми: <br> - Основи в мрежите<br>- Структура на мрежата , устройства и медия.<br> - Обяснение на многослойният модел - TCP/IP и OSI.<br>- Subneting<br>- Routing<br>- Ако има интерес ще си направим и практически симулации. Евентуално ще са към Cisco ориентирани че имат добър симулатор, нагледно dа се тестват разни неща<br>Гласувайте за това събитие тук: <a href=\"http://forum.hackafe.org/index.php?topic=293.0\" target=\"_blank\">курс за Networking</a><p>",
+        "image": "networking.jpg"
+    }
+]

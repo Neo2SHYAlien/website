@@ -17,8 +17,9 @@ define([
   'models/EventsCollection',
   'models/ProjectsCollection',
   'models/SponsorsCollection',
+  'models/FutureEventsCollection'
   ],
-  function($, _, Backbone, I18n, translations, HeaderView, FooterView, IndexView, EventsView, ProjectView,MembersView, SponsorsView, ContactsView, AnnouncementsView, EventsCollection, ProjectsCollection, SponsorsCollection) {
+  function($, _, Backbone, I18n, translations, HeaderView, FooterView, IndexView, EventsView, ProjectView,MembersView, SponsorsView, ContactsView, AnnouncementsView, EventsCollection, ProjectsCollection, SponsorsCollection, FutureEventsCollection) {
     // "use strict";
 
     var AppRouter = Backbone.Router.extend({
@@ -47,8 +48,6 @@ define([
         initialize: function() {
 
             var router = this;
-
-            //TO DO: create Who is in the lab widget
 
             //used for debug
             router.on('all', function (eventName) {
@@ -211,6 +210,46 @@ define([
                     this.off(null, arguments.callee);
 
                     window.eventDispacher.off('language:update', router.views.announcementsView.render);
+                }
+
+            });
+
+        },
+
+        sponsors: function() {
+            var router = this;
+
+
+            //updateHeader
+            if(router.views.headerView) {
+                router.views.headerView.render();
+            }else {
+                router.views.headerView = new HeaderView();
+            }
+
+            //updatePage content
+            if(router.views.sponsorsView) {
+
+                router.views.sponsorsView.render();
+
+            }else {
+
+                router.views.sponsorsView = new SponsorsView();
+            }
+
+
+            //bind language update
+            //To DO: refactor language update mechanism
+            window.eventDispacher.off('language:update', router.views.sponsorsView.render);
+            window.eventDispacher.on('language:update', router.views.sponsorsView.render, router.views.sponsorsView);
+
+            //Turn off all event events
+            router.on('all', function (eventName) {
+
+                if(eventName && eventName.indexOf('route:') === 0 && eventName !== 'route:sponsors') {
+                    this.off(null, arguments.callee);
+
+                    window.eventDispacher.off('language:update', router.views.sponsorsView.render);
                 }
 
             });
