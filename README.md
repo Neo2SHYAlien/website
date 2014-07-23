@@ -15,6 +15,6 @@ Public - the main website folder
 		- templates - html templates
 		- translations - the laguages, supported on the website
 		- img - images for the website
-		- fonts - fonts for HK website
+		- fonts - fonts for hackafe website
 		- scripts
 		
