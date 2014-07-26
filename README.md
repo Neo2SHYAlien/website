@@ -2,19 +2,20 @@ website
 =======
 
 Website of Hackafe Plovdiv
+The website is based on backbone.js for MVC, underscore for model handling and underscore templates to output data.
 
-Structure of the website
+# Folder structure of the website
 
-Config/config.ini - contains credentials for the DB user. 
-
-Public - the main website folder
-	-api - the FB events sdk
-	-app - 	
-		- models - the backbonejs models for the website
-		- views - the backbonejs views
-		- templates - html underscore templates
-		- translations - the laguages, supported on the website
-		- img - images for the website
-		- fonts - fonts for hackafe website
-		- scripts
-		
+- API (api calls are stored here)
+- APP (main application folder)
+ - fonts
+ - img
+     - logo
+     - sponsors
+ - models
+ - scripts
+     - vendor
+ - styles
+ - templates
+ - translations
+ - views
