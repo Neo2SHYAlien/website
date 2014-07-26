@@ -8,9 +8,10 @@ define([
             //instance methods
             defaults: {
                id: null,
+               facebook_id: null,
                about: "",
                can_post : false,
-               category: "",
+               kind: "",
                checkins :0,
                cover: null,
                picture: null,
@@ -20,7 +21,7 @@ define([
                is_published : false,
                likes: 0,
                link : "",
-               name : "Hackafe Plovdiv",
+               title : "Hackafe Plovdiv",
                talking_about_count : 0,
                username: "HackafePlovdiv",
                website : "hackafe.org",

@@ -72,14 +72,20 @@ define([
 
         loadNextPage: function(evnt) {
             var view = this,
-                url = 'after=' + view.nextEventsUrlParam;
+                url = 'pageNumber=' + view.nextEventsUrlParam;
+                
+                view.nextEventsUrlParam++;
+                view.previousEventsUrlParam++;
 
             view.eventsCollection.loadNewModels(url);
         },
 
         loadPrevPage: function(evnt) {
             var view = this,
-                url = 'before=' + view.previousEventsUrlParam;
+                url = 'pageNumber=' + view.previousEventsUrlParam;
+                
+                view.nextEventsUrlParam--;
+                view.previousEventsUrlParam--;
 
             view.eventsCollection.loadNewModels(url);
         }

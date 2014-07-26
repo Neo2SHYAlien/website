@@ -6,7 +6,7 @@ define([
 
     var EventsCollection = Backbone.Collection.extend({
         model: EventModel,
-        url: 'api/events.php?url_string=%2Fevents%3Ffields=description,end_time,location,name,owner,picture,start_time,timezone,id,venue%26limit=10',
+        url: 'api/events.php?',
 
         initialize : function(models, options) {
             var collection = this;
@@ -17,6 +17,12 @@ define([
                 rawData = JSON.parse(rawData);
                 // console.log(rawData);
                 collection.parseRawData(rawData);
+//                var nextEventsUrlParam = 1,
+//                previousEventsUrlParam = 0;
+                window.eventDispacher.trigger('events:update:paging', {
+                    nextEventsUrlParam: 1,
+                    previousEventsUrlParam: 0
+                });
                 collection.deferred.resolve();
             });
 
@@ -43,36 +49,20 @@ define([
 
             _.each(rawData.data, function(eventModel) {
 
-                if(eventModel.start_time && eventModel.end_time) {
+
                     var start = eventModel.start_time.split('T');
                     start = parseInt(start[0].split('-').join(''));
 
                     var end = eventModel.end_time.split('T');
                     end = parseInt(end[0].split('-').join(''));
 
-                    if(end - start > 2) {
+                    if(eventModel.kind == 'course') {
                         eventModel.isCourse = true;
                     }
 
-                }
+                
 
                 collection.push(eventModel);
-            });
-
-            var nextEventsUrlParam = null,
-                previousEventsUrlParam = null;
-
-            if(rawData.paging.next) {
-                nextEventsUrlParam = rawData.paging.cursors.after;
-            }
-
-            if(rawData.paging.previous) {
-                previousEventsUrlParam = rawData.paging.cursors.before
-            }
-
-            window.eventDispacher.trigger('events:update:paging', {
-                nextEventsUrlParam: nextEventsUrlParam,
-                previousEventsUrlParam: previousEventsUrlParam
             });
 
         }
