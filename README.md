@@ -12,7 +12,7 @@ Public - the main website folder
 	-app - 	
 		- models - the backbonejs models for the website
 		- views - the backbonejs views
-		- templates - html templates
+		- templates - html underscore templates
 		- translations - the laguages, supported on the website
 		- img - images for the website
 		- fonts - fonts for hackafe website
